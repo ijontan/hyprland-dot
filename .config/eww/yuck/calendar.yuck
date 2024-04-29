@@ -1,0 +1,18 @@
+(defwidget cal []
+  (box :class "cal-box"
+       :orientation "v"
+       :space-evenly false
+    (calendar :class "cal"
+  ))
+)
+(defwindow calendar [mon]
+  :namespace "calendar"
+  :monitor mon
+  :geometry (geometry :anchor "top right" :x "15px" :y "15px")
+  :stacking "overlay"
+  (eventbox
+    :onhoverlost "scripts/toggleCalendar.sh"
+    (cal)
+  )
+)
+

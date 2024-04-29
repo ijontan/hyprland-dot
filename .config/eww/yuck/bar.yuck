@@ -1,0 +1,118 @@
+;; Battery
+(defpoll batt_perc :interval "30s" "scripts/battery.sh --perc")
+(defpoll batt_icon :interval "30s" "scripts/battery.sh --icon")
+
+(defwidget battery []
+  (box :orientation "h" :class "battery" :space-evenly false
+    {batt_icon}
+    {batt_perc + "%"}
+  )
+)
+
+(defwidget slider [label value onchange]
+  (tooltip 
+    {value + "%"}
+    (box :orientation "h" :class "slider" :space-evenly false :spacing 8
+      (label :class "label" :halign "start" :text label)
+      (scale :min 0 :max 101 :value value :onchange onchange)
+    )
+  )
+)
+
+;; Brightness control
+(defpoll brightness :interval "2s" "brightnessctl -m | cut -d, -f4 | tr -d '%'")
+
+(defwidget bri_slider []
+  (slider 
+    :label "󰃠 "
+    :value brightness
+    :onchange "brightnessctl set {}%"
+  )
+)
+
+;; Volume control
+(deflisten volume "scripts/volume.sh --volume --listen")
+(deflisten volume_icon "scripts/volume.sh --icon --listen")
+
+(defwidget vol_slider []
+  (slider 
+    :label volume_icon
+    :value volume
+    :onchange "pamixer --set-volume {}"
+  )
+)
+
+;; Time vars
+(defpoll TOD :interval "5s" `date +\"%p\"`)
+(defpoll DATE :interval "5s" `date +\" %b %d, %a,  %I:%M\"`)
+
+(defwidget clock []
+  (eventbox
+    :onhover "scripts/toggleCalendar.sh"
+    (box :class "clockbox" :orientation "h" :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
+      (label :class "date" :halign "start" :wrap "true" :limit-width 25 :text DATE)
+      (label :class "tod" :halign "start" :wrap "true" :limit-width 25 :text TOD)
+    )
+  )
+)
+
+(deflisten cavaVal "scripts/EwwCava.sh")
+
+(defwidget cava []
+  (box :class "cava"
+    {cavaVal}
+  )
+)
+
+(deflisten workspace "scripts/workspace.sh")
+
+(defwidget workspaces []
+  (literal :content workspace)
+)
+
+(defwidget left []
+  (box :orientation "h" :space-evenly false :spacing 10 :halign "start"
+    (workspaces)
+    (systray :class "tray" :spacing 7 :icon-size 20)
+    (battery)
+  )
+)
+
+(defwidget center []
+  (box
+    (tooltip
+      (calendar)
+      {"ok"}
+    )
+  )
+)
+
+(defwidget right []
+  (box :orientation "h" :space-evenly false :spacing 10 :halign "end"
+    (cava)
+    (vol_slider)
+    (bri_slider)
+    (clock)
+  )
+)
+
+(defwidget bar []
+  (centerbox :class "innerbar" :orientation "h"
+    (left)
+    (center)
+    (right)
+  )
+)
+
+;; window
+(defwindow bar [mon]
+  :namespace "ewwbar"
+  :monitor mon
+  :exclusive true
+  :geometry (geometry :x "0.5%" :y "0px" :width "99%" :anchor "top center")
+  :stacking   "fg"
+  :windowtype "dock"
+  ;; :onhover (set winh "30px")
+  ;; :reserve    (struts :distance "50px" :side "top")
+  (bar)
+)

@@ -1,0 +1,85 @@
+// .calendar-box {
+//   background-color: transparent;
+// }
+// calendar {
+//   color: $foreground;
+//   padding: 12;
+// }
+//
+// calendar.view {
+//   border: 2 solid white;
+//   background-color: rgba($color: #000000, $alpha: 0.2);
+//   border-radius: 20;
+// }
+//
+// calendar.header {
+//   color: $foreground;
+//   background-color: transparent;
+// }
+//
+// calendar.highlight {
+//   color: $foreground;
+//   background-color: white;
+//   border: 0;
+// }
+// calendar:selected {
+//   color: $foreground;
+//   font-weight: bold;
+// }
+// calendar:indeterminate {
+//   color: rgba($color: $foreground, $alpha: 0.4);
+// }
+//
+// calendar.button {
+//   background-color: white;
+// }
+
+.cal-box {
+  font-weight: Bold;
+  background-color: rgba($color: $background, $alpha: 0.1);
+  border-radius: 0.5rem;
+  padding: 0 1rem 0.2rem;
+  color: $foreground;
+  margin: 0.6rem 0.6rem 0.6rem 0.6rem;
+
+  .cal {
+    background-color: inherit;
+    padding: 0.5rem 0.15rem 0.2rem;
+    margin-left: 10px;
+
+    &>* {
+  color: $foreground;
+      border: solid 0px transparent;
+    }
+
+    &.highlight {
+      padding: 50rem;
+    }
+  }
+}
+
+calendar:selected {
+  color: $color2;
+}
+
+calendar.header {
+  color: $color2;
+  font-weight: bold;
+}
+
+calendar.button {
+  color: $foreground;
+}
+
+calendar.highlight {
+  color: $color5;
+  font-weight: bold;
+}
+calendar.day-number {
+  color: $color5;
+  font-weight: bold;
+}
+
+calendar:indeterminate {
+  color: $color1;
+}

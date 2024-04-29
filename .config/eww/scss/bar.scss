@@ -1,0 +1,146 @@
+.bar {
+  border-bottom-left-radius: 15;
+  border-bottom-right-radius: 15;
+  font-weight: 600;
+  color: $foreground;
+  // border-color: $color2;
+  // border-width: 5px;
+  border: 0 solid rgba($color: #000000, $alpha: 0.4);
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+  border-left-width: 2px;
+  background: rgba($color: #000000, $alpha: 0.2);
+}
+
+.innerbar {
+  padding: 6px 10px 6px 10px;
+}
+
+button {
+  all: unset;
+  padding: 3px 4px 3px 4px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  transition-property: all;
+  transition-duration: 200ms;
+  background-color: rgba($color: #ffffff, $alpha: 0.06);
+}
+
+button:hover {
+  color: $foreground;
+  background-color: rgba($color: $color3, $alpha: 0.6);
+  box-shadow: 0 0 5 1 rgba($color: $color3, $alpha: 0.7) ;
+}
+
+// workspace
+/* Unoccupied */
+.w0 {
+  color: rgba($color: $foreground, $alpha: 0.2);
+  font-weight: 100;
+  text-shadow: 1 1 rgba($color: $foreground, $alpha: 0.1);
+  transition-duration: 1s;
+}
+
+/* Occupied */
+.w01, .w02, .w03, .w04, .w05, .w06, .w07, .w08, .w09, .w010 {
+  color: $color2;
+  font-weight: 900;
+  text-shadow: 1 1 rgba($color: $color2, $alpha: 0.5);
+  transition-duration: 1s;
+}
+
+
+/* Focused */
+.w011, .w022, .w033, .w044, .w055, .w066, .w077, .w088, .w099, .w01010{
+  color: $foreground;
+  background-color: rgba($color: $color2, $alpha: 0.7) ;
+  box-shadow: 0 0 5 1 rgba($color: $color3, $alpha: 0.7) ;
+  font-weight: 900;
+  text-shadow: 1 1 rgba($color: $foreground, $alpha: 0.5);
+  transition-duration: 1s;
+}
+
+.tray {
+  border-radius: 6px;
+  padding: 0px 8px 0px 8px;
+  background-color: rgba($color: #ffffff, $alpha: 0.06);
+}
+
+.battery {
+  border-radius: 6px;
+  padding: 0px 8px 0px 8px;
+  background-color: rgba($color: #ffffff, $alpha: 0.06);
+}
+
+.cava {
+  border-radius: 6px;
+  // letter-spacing: 1px;
+  text-shadow: 4 3 rgba($color: $foreground, $alpha: 0.5);
+  padding: 0px 8px 0px 8px;
+  background-color: rgba($color: #ffffff, $alpha: 0.06);
+}
+
+.clockbox {
+  border-radius: 6px;
+  padding: 2px 8px 2px 8px;
+  text-shadow: 2 2 rgba($color: $foreground, $alpha: 0.15);
+  background-color: rgba($color: #ffffff, $alpha: 0.06);
+}
+
+.tod {
+  color: rgba($color: $foreground, $alpha: 0.7);
+  font-size: 0.85rem;
+  margin-left: 5px;
+  margin-top: 0.15rem;
+}
+
+tooltip {
+  background-color: rgba($color: $background, $alpha: 0.3);
+  font-weight: 900;
+  text-shadow: 1 1 rgba($color: $foreground, $alpha: 0.2);
+  color: $foreground;
+  border-radius: 10px;
+}
+
+.slider {
+  all: unset;
+  border-radius: 6px;
+  padding: 0px 8px 0px 8px;
+  background-color: rgba($color: #ffffff, $alpha: 0.06);
+}
+
+.slider scale {
+  min-width: 120px;
+  min-height: 20px;
+  padding: 0;
+}
+
+.slider scale trough {
+  min-height: 2px;
+  background-color: rgba($color: $foreground, $alpha: 0.2);
+}
+
+.slider scale trough slider {
+  border-radius: 14;
+  background-color: $color2;
+    margin: -8px;
+  box-shadow: 0 0 0 2 $foreground inset;
+  transition-duration: 75ms;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0,0,0.2,1);
+}
+
+.slider scale trough slider:hover {
+  box-shadow: 0 0 0 2 $foreground inset, 0 0 0 8 rgba($color: $foreground, $alpha: 0.12);
+}
+
+.slider scale trough slider:active {
+  box-shadow: 0 0 0 4 $foreground inset, 0 0 0 14 rgba($color: $foreground, $alpha: 0.12);
+}
+
+.slider scale trough highlight {
+  background-color: $foreground;
+  box-shadow: 0 0 0 2 $foreground inset;
+}
+
+

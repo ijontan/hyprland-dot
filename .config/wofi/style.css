@@ -1,0 +1,47 @@
+
+* {
+	font-size: 28px;
+	font-family: "JetBrains Mono Nerd Font";
+}
+
+#window {
+	background-color: rgba(0,0,0, 0.4);
+	color: --wofi-color6;
+	background-image: url(/home/itan/.config/wofi/.current_wallpaper);
+}
+
+#input {
+	padding: 8px 12px;
+}
+
+#outer-box {
+	padding: 60px;
+}
+
+#inner-box {
+	margin-top: 40px;
+	padding-bottom: 60px;
+}
+
+#entry {
+	padding: 12px 15px;
+}
+
+#entry:selected {
+	background-color: rgba(--wofi-rgb-color2, 0.5);
+	color: --wofi-color0;
+	background: linear-gradient(90deg, --wofi-color1, --wofi-color3);
+	font-weight: 800;
+}
+
+#entry:hover {
+	background-color: rgba(--wofi-rgb-color2, 0.7);
+}
+
+#text {
+	padding-left: 20px;
+}
+
+#text:selected {
+	padding-left: 20px;
+}

@@ -1,0 +1,18 @@
+width=40%
+height=50%
+normal_window=true
+
+
+## Images
+allow_markup=true
+allow_images=true
+image_size=50
+
+key_up=Control_L-k
+key_down=Control_L-j
+key_left=Control_L-h
+key_right=Control_L-l
+insensitive=true
+
+key_expand=Control_L-space
+term=kitty
