@@ -37,9 +37,9 @@ main() {
   
   # Check if the link is a playlist
   if [[ $link == *playlist* ]]; then
-    mpv --cookies --cookies-file='/home/itan/Downloads/youtube.com_cookies.txt' --shuffle --vid=no "$link"
+    mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' --shuffle --vid=no "$link"
   else
-    mpv --cookies --cookies-file='/home/itan/Downloads/youtube.com_cookies.txt' "$link"
+    mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' "$link"
   fi
 }
 
