@@ -35,12 +35,21 @@ main() {
 
   notification "$choice"
   
-  # Check if the link is a playlist
-  if [[ $link == *playlist* ]]; then
-    mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' --shuffle --vid=no "$link"
+  if ! [ -f /home/itan/Downloads/www.youtube.com_cookies.txt ]; then
+    if [[ $link == *playlist* ]]; then
+      mpv --cookies --shuffle --vid=no "$link"
+    else
+      mpv --cookies "$link"
+    fi
   else
-    mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' "$link"
+    if [[ $link == *playlist* ]]; then
+      mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' --shuffle --vid=no "$link"
+    else
+      mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' "$link"
+    fi
   fi
+
+  # Check if the link is a playlist
 }
 
 # Check if an online music process is running and send a notification, otherwise run the main function

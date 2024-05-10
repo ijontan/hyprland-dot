@@ -11,6 +11,7 @@ declare -A menu_options=(
     ["Kitty"]="$HOME/.config/kitty"
     ["Pywal"]="$HOME/.config/wal"
     ["Rofi"]="$HOME/.config/rofi"
+    ["Nvim"]="$HOME/.config/nvim"
     ["Keyd"]="/etc/keyd"
 )
 

@@ -23,7 +23,7 @@ if [ -f "$cache_file" ]; then
     wallpaper_path=$(cat "$cache_file")
     echo $wallpaper_path
     # Copy the wallpaper to the location Rofi can access
-    if ln -sf "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"; then
+    if ln -sf "$wallpaper_path" "$HOME/.config/hypr/.current_wallpaper"; then
         ln_success=true  # Set the flag to true upon successful execution
     fi
 fi
