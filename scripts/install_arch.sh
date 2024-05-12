@@ -7,6 +7,7 @@ sudo pacman -Syu
 declare -a packages=("git" "jq" "kitty" "thunar" 
 "pipewire" "pipewire-pulse" "pavucontrol"
 "rofi-wayland" "bc" "wlogout" "wofi" "wl-clipboard"
+"sddm"
 )
 for package in "$packages"
 do
