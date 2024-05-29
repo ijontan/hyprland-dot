@@ -1,18 +1,17 @@
 .bar {
+  all: unset;
+}
+
+.innerbar {
   border-bottom-left-radius: 15;
   border-bottom-right-radius: 15;
   font-weight: 600;
   color: $foreground;
   // border-color: $color2;
   // border-width: 5px;
-  border: 0 solid rgba($color: #000000, $alpha: 0.4);
-  border-bottom-width: 2px;
-  border-right-width: 2px;
-  border-left-width: 2px;
+  border: 2px solid rgba($color: #000000, $alpha: 0.4);
+  border-top: 0px;
   background: rgba($color: #000000, $alpha: 0.2);
-}
-
-.innerbar {
   padding: 6px 10px 6px 10px;
 }
 
@@ -43,9 +42,9 @@ button:hover {
 
 /* Occupied */
 .w01, .w02, .w03, .w04, .w05, .w06, .w07, .w08, .w09, .w010 {
-  color: $color2;
+  color: $color12;
   font-weight: 900;
-  text-shadow: 1 1 rgba($color: $color2, $alpha: 0.5);
+  text-shadow: 1 1 rgba($color: $color11, $alpha: 0.5);
   transition-duration: 1s;
 }
 
@@ -53,7 +52,7 @@ button:hover {
 /* Focused */
 .w011, .w022, .w033, .w044, .w055, .w066, .w077, .w088, .w099, .w01010{
   color: $foreground;
-  background-color: rgba($color: $color2, $alpha: 0.7) ;
+  background-color: rgba($color: $color11, $alpha: 0.7) ;
   box-shadow: 0 0 5 1 rgba($color: $color3, $alpha: 0.7) ;
   font-weight: 900;
   text-shadow: 1 1 rgba($color: $foreground, $alpha: 0.5);

@@ -1,11 +1,19 @@
 ;; Battery
 (defpoll batt_perc :interval "30s" "scripts/battery.sh --perc")
 (defpoll batt_icon :interval "30s" "scripts/battery.sh --icon")
+(defvar batt_watt "0w")
+(defvar batt_volt "0V")
 
 (defwidget battery []
-  (box :orientation "h" :class "battery" :space-evenly false
-    {batt_icon}
-    {batt_perc + "%"}
+  (eventbox
+    :onhover "eww update batt_watt=\"$(scripts/battery.sh --watt)\" && eww update batt_volt=\"$(scripts/battery.sh --volt)\""
+    (tooltip
+      {batt_volt + ", " + batt_watt}
+      (box :orientation "h" :class "battery" :space-evenly false 
+        {batt_icon}
+        {batt_perc + "%"}
+      )
+    )
   )
 )
 
@@ -80,10 +88,10 @@
 
 (defwidget center []
   (box
-    (tooltip
-      (calendar)
-      {"ok"}
-    )
+    ;; (tooltip
+    ;;   (calendar)
+    ;;   {"ok"}
+    ;; )
   )
 )
 
@@ -109,7 +117,7 @@
   :namespace "ewwbar"
   :monitor mon
   :exclusive true
-  :geometry (geometry :x "0.5%" :y "0px" :width "99%" :anchor "top center")
+  :geometry (geometry :x "0px" :y "0px" :width "158%" :anchor "top center")
   :stacking   "fg"
   :windowtype "dock"
   ;; :onhover (set winh "30px")

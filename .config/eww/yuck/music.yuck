@@ -1,0 +1,104 @@
+(deflisten cavajson "scripts/EwwCavaL.sh")
+
+(defwidget cavabar [nth]
+  (box
+    :valign 'end'
+    :haligm 'fill'
+    :width 22
+    :class "cavabar"
+    :style "
+      min-height: ${cavajson[nth] / 9}px;
+      "
+  )
+)
+
+(defwidget music []
+  (box 
+    :spacing 6
+    :space-evenly false
+    (box :width 25)
+    (cavabar :nth 0)
+    (cavabar :nth 1)
+    (cavabar :nth 2)
+    (cavabar :nth 3)
+    (cavabar :nth 4)
+    (cavabar :nth 5)
+    (cavabar :nth 6)
+    (cavabar :nth 7)
+    (cavabar :nth 8)
+    (cavabar :nth 9)
+    (cavabar :nth 10)
+    (cavabar :nth 11)
+    (cavabar :nth 12)
+    (cavabar :nth 13)
+    (cavabar :nth 14)
+    (cavabar :nth 15)
+    (cavabar :nth 16)
+    (cavabar :nth 17)
+    (cavabar :nth 18)
+    (cavabar :nth 19)
+    (cavabar :nth 20)
+    (cavabar :nth 21)
+    (cavabar :nth 22)
+    (cavabar :nth 23)
+    (cavabar :nth 24)
+    (cavabar :nth 25)
+    (cavabar :nth 26)
+    (cavabar :nth 27)
+    (cavabar :nth 28)
+    (cavabar :nth 29)
+    (cavabar :nth 30)
+    (cavabar :nth 31)
+    (cavabar :nth 32)
+    (cavabar :nth 33)
+    (cavabar :nth 34)
+    (cavabar :nth 35)
+    (cavabar :nth 36)
+    (cavabar :nth 37)
+    (cavabar :nth 38)
+    (cavabar :nth 39)
+    (cavabar :nth 40)
+    (cavabar :nth 41)
+    (cavabar :nth 42)
+    (cavabar :nth 43)
+    (cavabar :nth 44)
+    (cavabar :nth 45)
+    (cavabar :nth 46)
+    (cavabar :nth 47)
+    (cavabar :nth 48)
+    (cavabar :nth 49)
+    (cavabar :nth 50)
+    (cavabar :nth 51)
+    (cavabar :nth 52)
+    (cavabar :nth 53)
+    (cavabar :nth 54)
+    (cavabar :nth 55)
+    (cavabar :nth 56)
+    (cavabar :nth 57)
+    (cavabar :nth 58)
+    (cavabar :nth 59)
+    (cavabar :nth 60)
+    (cavabar :nth 61)
+    (cavabar :nth 62)
+    (cavabar :nth 63)
+    (cavabar :nth 64)
+    (cavabar :nth 65)
+    (cavabar :nth 66)
+    (cavabar :nth 67)
+    (cavabar :nth 68)
+    (cavabar :nth 69)
+    (box :width 25)
+  )
+)
+
+(defwindow music []
+  :namespace "music"
+  :monitor 0
+  :geometry (geometry :anchor "bottom center" :x "0px" :y "0px" :height "140px")
+  :exclusive true
+  :stacking "fg"
+  :windowtype "dock"
+  (eventbox
+    (music)
+  )
+)

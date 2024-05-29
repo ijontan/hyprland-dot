@@ -1,0 +1,22 @@
+
+
+(defvar wsopen false)
+
+(deflisten workspace "scripts/workspace.sh")
+
+(defwidget workspaces []
+  (literal :content workspace)
+)
+
+(defwindow wswid []
+  :namespace "wswid"
+  :monitor 0
+  :geometry (geometry :anchor "top left" :x "20px" :y "0px")
+  :stacking "fg"
+  (popout_top
+    :varname "wsopen"
+    :var wsopen
+    (workspaces)
+  )
+)
+

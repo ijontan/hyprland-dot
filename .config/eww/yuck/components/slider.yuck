@@ -1,0 +1,10 @@
+
+(defwidget slider [label value onchange orientation]
+  (tooltip 
+    {value + "%"}
+    (box :orientation orientation :class "slider" :space-evenly false :spacing 8
+      (label :class "label" :halign "start" :text label)
+      (scale :min 0 :max 101 :value value :onchange onchange)
+    )
+  )
+)

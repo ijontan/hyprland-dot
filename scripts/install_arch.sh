@@ -4,14 +4,30 @@
 
 sudo pacman -Syu
 
-declare -a packages=("git" "jq" "kitty" "thunar" 
-"pipewire" "pipewire-pulse" "pavucontrol"
-"rofi-wayland" "bc" "wlogout" "wofi" "wl-clipboard"
-"sddm"
-)
-for package in "$packages"
-do
-	echo "Installing: " $package
-	sudo pacman -S --needed --noconfirm $package
-	echo "done: " $package
-done
+install_pacman(){
+	packages="git jq bc kitty 
+	thunar thunar-archive-plugin
+	socat
+	pipewire pipewire-pulse pipewire-alsa pavucontrol pamixer
+	rofi-wayland wofi wl-clipboard
+	mpv yt-dlp brightnessctl cliphist playerctl polkit grim slurp swappy
+	acpi
+	sddm npm"
+
+	sudo pacman -S --needed --noconfirm $packages
+}
+
+install_yay(){
+	git clone https://aur.archlinux.org/yay.git
+	cd yay
+	makepkg -si --needed --noconfirm
+}
+
+install_aur(){
+	aur="hyprland-git cava wlogout swww-git oh-my-posh eww-git delta pywal-git"	
+	yay -S --needed --noconfirm
+}
+
+install_pacman
+install_yay
+install_aur

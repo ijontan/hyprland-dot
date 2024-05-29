@@ -26,6 +26,9 @@ if [ -f "$cache_file" ]; then
     if ln -sf "$wallpaper_path" "$HOME/.config/hypr/.current_wallpaper"; then
         ln_success=true  # Set the flag to true upon successful execution
     fi
+    if ln -sf "$wallpaper_path" "$HOME/.config/rofi/.current_wallpaper"; then
+        ln_success=true  # Set the flag to true upon successful execution
+    fi
 fi
 
 # Check the flag before executing further commands
@@ -34,5 +37,5 @@ if [ "$ln_success" = true ]; then
     # wal -i "$wallpaper_path"
 	echo 'about to execute wal'
     # execute pywal skipping tty and terminal changes
-    wal -i "$wallpaper_path" -s -t &
+    wallust run "$wallpaper_path" -q &
 fi

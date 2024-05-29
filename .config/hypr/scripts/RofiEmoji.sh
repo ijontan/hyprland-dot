@@ -2,8 +2,9 @@
 ## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Rofi Emoticons. Not my own. Cant remember the source
 
+pkill rofi ||
 sed '1,/^### DATA ###$/d' $0 | 
-wofi --dmenu| 
+rofi -dmenu| 
 cut -d ' ' -f 1 | tr -d '\n' | wl-copy
 
 exit

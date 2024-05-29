@@ -25,7 +25,7 @@ notification() {
 
 # Main function
 main() {
-  choice=$(printf "%s\n" "${!menu_options[@]}" | wofi --dmenu -i -p "")
+  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -dmenu -i -p "")
 
   if [ -z "$choice" ]; then
     exit 1
@@ -53,4 +53,4 @@ main() {
 }
 
 # Check if an online music process is running and send a notification, otherwise run the main function
-pkill mpv && notify-send -u low -i "$iDIR/music.png" "Online Music stopped" || main
+pkill mpv && notify-send -u low -i "$iDIR/music.png" "Online Music stopped" ||(pkill rofi || main)

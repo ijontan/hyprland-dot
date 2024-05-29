@@ -11,12 +11,12 @@ declare -A menu_options=(
     ["Kitty"]="$HOME/.config/kitty"
     ["Pywal"]="$HOME/.config/wal"
     ["Rofi"]="$HOME/.config/rofi"
-    ["Nvim"]="$HOME/.config/nvim"
+    ["Neovim"]="$HOME/.config/nvim"
     ["Keyd"]="/etc/keyd"
 )
 
 main() {
-  choice=$(printf "%s\n" "${!menu_options[@]}" | wofi --term=kitty --dmenu | cut -d. -f1)
+  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -i -term=kitty -dmenu | cut -d. -f1)
 
   if [ -z "$choice" ]; then
     exit 1
@@ -26,4 +26,4 @@ main() {
   kitty -d $path nvim $path
 }
 
-main
+pkill rofi || main

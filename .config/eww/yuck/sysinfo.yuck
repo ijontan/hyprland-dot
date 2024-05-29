@@ -1,0 +1,73 @@
+
+(defpoll batt_perc :interval "5s" :run-while sysinfo_open "scripts/battery.sh --perc")
+(defpoll batt_icon :interval "5s" :run-while sysinfo_open "scripts/battery.sh --icon")
+(defvar batt_watt "0w")
+(defvar batt_volt "0V")
+
+;; Brightness control
+(defpoll brightness :interval "2s" "brightnessctl -m | cut -d, -f4 | tr -d '%'")
+
+(defwidget bri_slider []
+  (slider 
+    :label "󰃠 "
+    :value brightness
+    :onchange "brightnessctl set {}%"
+    :orientation 'h'
+  )
+)
+
+;; Volume control
+(deflisten volume "scripts/volume.sh --volume --listen")
+(deflisten volume_icon "scripts/volume.sh --icon --listen")
+
+(defwidget vol_slider []
+  (slider 
+    :label volume_icon
+    :value volume
+    :onchange "pamixer --set-volume {}"
+    :orientation 'h'
+  )
+)
+
+(defwidget battery []
+  (eventbox
+    :onhover "eww update batt_watt=\"$(scripts/battery.sh --watt)\" && eww update batt_volt=\"$(scripts/battery.sh --volt)\""
+    (tooltip
+      {batt_volt + ", " + batt_watt}
+      (box :orientation "h" :class "battery" :space-evenly false 
+        {batt_icon}
+        {batt_perc + "%"}
+      )
+    )
+  )
+)
+
+;; Time vars
+(defpoll TOD :interval "5s" :run-while sysinfo_open `date +\"%p\"`)
+(defpoll DATE :interval "5s" :run-while sysinfo_open `date +\" %b %d, %a,  %I:%M\"`)
+
+(defwidget clock []
+  (box :class "clockbox" :orientation "h" :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
+    DATE
+    TOD
+  )
+)
+
+(defvar sysinfo_open false)
+(defwindow sysinfo
+  :namespace "sysinfo"
+  :monitor 0
+  :geometry (geometry :x "20px" :y "0px" :anchor "top right")
+  :stacking   "fg"
+  (popout_top
+    :varname "sysinfo_open"
+    :var sysinfo_open
+    (box :space-evenly false :spacing 7
+      (vol_slider)
+      (bri_slider)
+      (systray :class "tray" :spacing 7 :icon-size 20)
+      (battery)
+      (clock)
+    )
+  )
+)

@@ -1,0 +1,64 @@
+
+(defwidget popout_top [varname var]
+  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
+    (box :space-evenly false :orientation 'v'
+      (revealer
+        :transition "slidedown"
+        :reveal var
+        (box
+          :style "padding: 10px 20px 5px 20px;"
+          (children)
+        )
+      )
+      (box :height "10" :width "0")
+    )
+  )
+)
+
+(defwidget popout_bot [varname var]
+  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
+    (box :space-evenly false :orientation 'v'
+      (box :height "10" :width "0")
+      (revealer
+        :transition "slideup"
+        :reveal var
+        (box
+          :style "padding: 5px 20px 10px 20px;"
+          (children)
+        )
+      )
+    )
+  )
+)
+
+(defwidget popout_left [varname var]
+  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
+    (box :space-evenly false :orientation 'h'
+      (box :height "0" :width "10")
+      (revealer
+        :transition "slideright"
+        :reveal var
+        (box
+          :style "padding: 20px 5px 20px 10px;"
+          (children)
+        )
+      )
+    )
+  )
+)
+
+(defwidget popout_right [varname var]
+  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
+    (box :space-evenly false :orientation 'h'
+      (box :height "0" :width "10")
+      (revealer
+        :transition "slideleft"
+        :reveal var
+        (box
+          :style "padding: 20px 10px 20px 5px;"
+          (children)
+        )
+      )
+    )
+  )
+)

@@ -1,5 +1,12 @@
 #!/bin/bash
 
+get_watt() {
+	awk '{print $1*10^-6 "w"}' /sys/class/power_supply/BAT0/power_now
+}
+
+get_volt() {
+	awk '{print $1*10^-6 "V"}' /sys/class/power_supply/BAT0/voltage_now
+}
 
 get_perc() {
 	acpi | awk -F ': |, ' 'END {print $3}' | tr -d \%,
@@ -58,9 +65,20 @@ get_icon() {
 		fi
 	fi
 }
+case "$1" in
+	"--perc")
+		get_perc
+		;;
+	"--icon")
+		get_icon
+		;;
+	"--watt")
+		get_watt
+		;;
+	"--volt")
+		get_volt
+		;;
+	*)
+		;;
+esac
 
-if [[ "$1" == "--perc" ]]; then
-	get_perc
-elif [[ "$1" == "--icon" ]]; then
-	get_icon
-fi
