@@ -2,7 +2,7 @@
 
 (( EUID != 0 )) && exec sudo -- "$0" "$@"
 
-sudo pacman -Syu
+# sudo pacman -Syu
 
 install_pacman(){
 	packages="git jq bc kitty 
@@ -18,9 +18,17 @@ install_pacman(){
 }
 
 install_yay(){
-	git clone https://aur.archlinux.org/yay.git
-	cd yay
-	makepkg -si --needed --noconfirm
+	sudo pacman -S --needed --noconfirm base-devel
+	git clone https://aur.archlinux.org/yay-bin.git /tmp/buildyay
+	cd /tmp/buildyay
+	makepkg -o
+	makepkg -se
+	makepkg -i --noconfirm
+	cd $base
+	rm -rf /tmp/buildyay
+	# git clone https://aur.archlinux.org/yay.git
+	# cd yay
+	# makepkg -si --needed --noconfirm
 }
 
 install_aur(){
@@ -28,6 +36,6 @@ install_aur(){
 	yay -S --needed --noconfirm
 }
 
-install_pacman
+# install_pacman
 install_yay
-install_aur
+# install_aur

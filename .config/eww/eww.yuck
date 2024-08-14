@@ -5,4 +5,5 @@
 (include "yuck/music.yuck")
 (include "yuck/wswid.yuck")
 (include "yuck/sysinfo.yuck")
+(include "yuck/windows.yuck")
 

@@ -2,4 +2,4 @@
 
 sleep 0.7
 
-eww update wsopen=false
+eww update sysinfo_open=false wsopen=false

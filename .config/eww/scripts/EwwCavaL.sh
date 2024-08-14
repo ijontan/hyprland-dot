@@ -13,7 +13,7 @@ source = auto
 method = raw
 raw_target = /dev/stdout
 data_format = ascii
-ascii_max_range = 200
+ascii_max_range = 120
 
 [smoothing]
 integral = 40
@@ -24,4 +24,4 @@ sleep 0.2
 # Kill cava if it's already running
 pkill -f "cava -p $config_file"
 
-cava -p /tmp/bar_cava_config| sed -u "s/;/,/g; s/\(.*\),/[\1]/"
+cava -p "$config_file" | sed -u "s/;/,/g; s/\(.*\),/[\1]/"

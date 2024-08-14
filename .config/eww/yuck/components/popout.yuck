@@ -34,15 +34,16 @@
 (defwidget popout_left [varname var]
   (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
     (box :space-evenly false :orientation 'h'
-      (box :height "0" :width "10")
       (revealer
         :transition "slideright"
         :reveal var
-        (box
+        (box 
+          :orientation 'v'
           :style "padding: 20px 5px 20px 10px;"
           (children)
         )
       )
+      (box :height "0" :width "10")
     )
   )
 )
@@ -55,6 +56,7 @@
         :transition "slideleft"
         :reveal var
         (box
+          :orientation 'v'
           :style "padding: 20px 10px 20px 5px;"
           (children)
         )

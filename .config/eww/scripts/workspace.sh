@@ -4,6 +4,9 @@
 ic=(0 I II III IV V VI VII VIII IX X)
 
 workspaces() {
+  if !([[ $1 == "workspace>>"* ]] || [[ $1 == "focusedmon>>"* ]] || [ $# -eq 0 ]);  then
+    return 1
+  fi
 unset -v \
   o1 o2 o3 o4 o5 o6 o7 o8 o9 o10 \
   f1 f2 f3 f4 f5 f6 f7 f8 f9 f10

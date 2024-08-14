@@ -7,7 +7,7 @@
     :width 22
     :class "cavabar"
     :style "
-      min-height: ${cavajson[nth] / 9}px;
+      min-height: ${cavajson[nth]}px;
       "
   )
 )
