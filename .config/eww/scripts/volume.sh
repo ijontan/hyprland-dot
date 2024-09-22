@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+sDIR="$HOME/.config/hypr/UserScripts"
+SCRIPT_DIR=$HOME/.config/eww/scripts
 
 volume() {
     pamixer --get-volume
@@ -27,7 +30,7 @@ main() {
     fi
 }
 
-main "$1"
+main "$@"
 if [[ "$2" == "--listen" ]]; then
     pactl  subscribe | grep --line-buffered "change.*sink" | while read -r event ; do main "$1"; done
 fi

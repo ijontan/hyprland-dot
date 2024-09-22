@@ -1,7 +1,9 @@
 
-(defwidget popout_top [varname var]
-  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
-    (box :space-evenly false :orientation 'v'
+(defwidget popout_top [varname ?onhover ?onhoverlost var]
+  (eventbox 
+    :onhover "eww update ${varname}=true; ${onhover}"
+    :onhoverlost "eww update ${varname}=false; ${onhoverlost}"
+    (box :space-evenly false :orientation 'v' :style "padding-bottom: 10px;"
       (revealer
         :transition "slidedown"
         :reveal var
@@ -10,15 +12,15 @@
           (children)
         )
       )
-      (box :height "10" :width "0")
     )
   )
 )
 
-(defwidget popout_bot [varname var]
-  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
-    (box :space-evenly false :orientation 'v'
-      (box :height "10" :width "0")
+(defwidget popout_bot [varname ?onhover ?onhoverlost var]
+  (eventbox 
+    :onhover "eww update ${varname}=true; ${onhover}"
+    :onhoverlost "eww update ${varname}=false; ${onhoverlost}"
+    (box :space-evenly false :orientation 'v' :style "padding-top: 10px;"
       (revealer
         :transition "slideup"
         :reveal var
@@ -31,9 +33,11 @@
   )
 )
 
-(defwidget popout_left [varname var]
-  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
-    (box :space-evenly false :orientation 'h'
+(defwidget popout_left [varname ?onhover ?onhoverlost var]
+  (eventbox 
+    :onhover "eww update ${varname}=true; ${onhover}"
+    :onhoverlost "eww update ${varname}=false; ${onhoverlost}"
+    (box :space-evenly false :orientation 'h' :style "padding-right: 10px;"
       (revealer
         :transition "slideright"
         :reveal var
@@ -43,15 +47,15 @@
           (children)
         )
       )
-      (box :height "0" :width "10")
     )
   )
 )
 
-(defwidget popout_right [varname var]
-  (eventbox :onhover "eww update ${varname}=true" :onhoverlost "eww update ${varname}=false"
-    (box :space-evenly false :orientation 'h'
-      (box :height "0" :width "10")
+(defwidget popout_right [varname ?onhover ?onhoverlost var]
+  (eventbox 
+    :onhover "eww update ${varname}=true; ${onhover}"
+    :onhoverlost "eww update ${varname}=false; ${onhoverlost}"
+    (box :space-evenly false :orientation 'h' :style "padding-left: 10px;"
       (revealer
         :transition "slideleft"
         :reveal var

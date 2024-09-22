@@ -6,4 +6,6 @@
 (include "yuck/wswid.yuck")
 (include "yuck/sysinfo.yuck")
 (include "yuck/windows.yuck")
+(include "yuck/clock.yuck")
+(include "yuck/quickActions.yuck")
 

@@ -1,0 +1,86 @@
+;; actions 
+;; top right
+(defvar ct_hover "swaync-client -t -sw")
+
+(defvar tr_hover "$HOME/.config/hypr/scripts/Wlogout.sh")
+
+(defvar tl_hover "")
+(defvar tl_hoverlost "")
+
+(defvar br_hover "scripts/musicOpen.sh")
+(defvar br_hoverlost "scripts/musicClose.sh")
+(defvar br_scroll "scripts/volumeChange.sh {}")
+(defvar br_leftclick "$HOME/.config/hypr/UserScripts/RofiBeats.sh")
+(defvar br_rightclick "")
+
+(defvar bl_hover "")
+(defvar bl_hoverlost "")
+
+(defwidget actionbox_dot []
+  (box :width 4 :height 4)
+)
+
+(defwindow qa_ct []
+  :namespace "qa_ct"
+  :monitor 0
+  :geometry (geometry :anchor "top center" :x "0px" :y "0px")
+  :stacking "fg"
+  (eventbox
+    :onhover ct_hover
+    (box :width 400 :height 6)
+  )
+)
+
+;; quick action (top right)
+(defwindow qa_tr []
+  :namespace "qa_tr"
+  :monitor 0
+  :geometry (geometry :anchor "right top" :x "0px" :y "0px")
+  :stacking "fg"
+  (eventbox
+    :onhover tr_hover
+    (actionbox_dot)
+  )
+)
+
+;; quick action (top left)
+(defwindow qa_tl []
+  :namespace "qa_tl"
+  :monitor 0
+  :geometry (geometry :anchor "left top" :x "0px" :y "0px")
+  :stacking "fg"
+  (eventbox
+    :onhover tl_hover
+    :onhoverlost tl_hoverlost
+    (actionbox_dot)
+  )
+)
+
+;; quick action (bottom right)
+(defwindow qa_br []
+  :namespace "qa_br"
+  :monitor 0
+  :geometry (geometry :anchor "right bottom" :x "0px" :y "0px")
+  :stacking "fg"
+  (eventbox
+    :onhover br_hover
+    :onhoverlost br_hoverlost
+    :onscroll br_scroll
+    :onclick br_leftclick
+    :onrightclick br_rightclick
+    (actionbox_dot)
+  )
+)
+
+;; quick action (bottom right)
+(defwindow qa_bl []
+  :namespace "qa_bl"
+  :monitor 0
+  :geometry (geometry :anchor "left bottom" :x "0px" :y "0px")
+  :stacking "overlay"
+  (eventbox
+    :onhover bl_hover
+    :onhoverlost bl_hoverlost
+    (actionbox_dot)
+  )
+)

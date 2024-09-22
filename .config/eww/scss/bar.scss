@@ -15,6 +15,10 @@
   padding: 6px 10px 6px 10px;
 }
 
+.test {
+  background-color: #fff;
+}
+
 button {
   all: unset;
   padding: 3px 4px 3px 4px;
@@ -28,7 +32,7 @@ button {
 button:hover {
   color: $foreground;
   background-color: rgba($color: $color3, $alpha: 0.6);
-  box-shadow: 0 0 5 1 rgba($color: $color3, $alpha: 0.7) ;
+  box-shadow: 0 0 5 1 rgba($color: $color3, $alpha: 0.7);
 }
 
 // workspace
@@ -41,7 +45,16 @@ button:hover {
 }
 
 /* Occupied */
-.w01, .w02, .w03, .w04, .w05, .w06, .w07, .w08, .w09, .w010 {
+.w01,
+.w02,
+.w03,
+.w04,
+.w05,
+.w06,
+.w07,
+.w08,
+.w09,
+.w010 {
   color: $color12;
   font-weight: 900;
   text-shadow: 1 1 rgba($color: $color11, $alpha: 0.5);
@@ -50,10 +63,19 @@ button:hover {
 
 
 /* Focused */
-.w011, .w022, .w033, .w044, .w055, .w066, .w077, .w088, .w099, .w01010{
+.w011,
+.w022,
+.w033,
+.w044,
+.w055,
+.w066,
+.w077,
+.w088,
+.w099,
+.w01010 {
   color: $foreground;
-  background-color: rgba($color: $color11, $alpha: 0.7) ;
-  box-shadow: 0 0 5 1 rgba($color: $color3, $alpha: 0.7) ;
+  background-color: rgba($color: $color11, $alpha: 0.7);
+  box-shadow: 0 0 5 1 rgba($color: $color3, $alpha: 0.7);
   font-weight: 900;
   text-shadow: 1 1 rgba($color: $foreground, $alpha: 0.5);
   transition-duration: 1s;
@@ -122,11 +144,11 @@ tooltip {
 .slider scale trough slider {
   border-radius: 14;
   background-color: $color2;
-    margin: -8px;
+  margin: -8px;
   box-shadow: 0 0 0 2 $foreground inset;
   transition-duration: 75ms;
   transition-property: all;
-  transition-timing-function: cubic-bezier(0,0,0.2,1);
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
 }
 
 .slider scale trough slider:hover {
@@ -141,5 +163,3 @@ tooltip {
   background-color: $foreground;
   box-shadow: 0 0 0 2 $foreground inset;
 }
-
-

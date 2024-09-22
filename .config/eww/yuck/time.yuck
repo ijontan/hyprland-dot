@@ -1,0 +1,18 @@
+
+(defwindow time []
+  :namespace "windows"
+  :monitor 0
+  :geometry (geometry :anchor "left center" :x "0px" :y "0px")
+  :stacking "fg"
+  (popout_left
+    :varname "wopen"
+    :var wopen
+    (box
+      :orientation "v" :gap "10px"
+      (for win in windowsjson
+        (windowIcons :winjson {win})
+      )
+    )
+  )
+)
+

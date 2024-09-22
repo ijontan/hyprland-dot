@@ -95,8 +95,8 @@
   :namespace "music"
   :monitor 0
   :geometry (geometry :anchor "bottom center" :x "0px" :y "0px" :height "140px")
-  :exclusive true
-  :stacking "fg"
+  :stacking "bg"
+  :focusable false
   :windowtype "dock"
   (eventbox
     (music)

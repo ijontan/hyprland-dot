@@ -5,6 +5,7 @@ SCRIPT_DIR=$HOME/.config/eww/scripts
 
 openwin(){
 	eww update sysinfo_open=true wsopen=true
+	eww o clock
 }
 
 pkill -f $SCRIPT_DIR/closebar\.sh || openwin

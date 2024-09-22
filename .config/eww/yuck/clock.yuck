@@ -1,0 +1,14 @@
+
+(defpoll CLOCK_DATE :interval "1s" `date +\"%I:%M:%S%p\"`)
+
+(defwindow clock []
+  :namespace "clock_wid"
+  :monitor 0
+  :geometry (geometry :anchor "right bottom" :x "50px" :y "50px")
+  :stacking "fg"
+  (box
+    :class "clock-box"
+    {CLOCK_DATE}
+  )
+)
+

@@ -43,7 +43,7 @@ main() {
     fi
   else
     if [[ $link == *playlist* ]]; then
-      mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' --shuffle --vid=no "$link"
+      mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' --shufflei --loop-playlist=inf --vid=no "$link"
     else
       mpv --cookies --cookies-file='/home/itan/Downloads/www.youtube.com_cookies.txt' "$link"
     fi

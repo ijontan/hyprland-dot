@@ -61,6 +61,8 @@
   :stacking   "fg"
   (popout_top
     :varname "sysinfo_open"
+    :onhover "eww o clock"
+    :onhoverlost "eww c clock"
     :var sysinfo_open
     (box :space-evenly false :spacing 7
       (vol_slider)
