@@ -2,7 +2,7 @@
 ## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # For disabling touchpad.
 
-Touchpad_Device="asue1209:00-04f3:319f-touchpad"
+Touchpad_Device="asuf1204:00-2808:0202-touchpad"
 notif="$HOME/.config/swaync/images/bell.png"
 
 XDG_RUNTIME_DIR=${XDG_RUNTIME_DIR:-/run/user/$(id -u)}
@@ -18,7 +18,7 @@ toggle_touchpad() {
   fi
 
   notify-send -u low -i "$notif" "Touchpad $action"
-  hyprctl keyword "device:$Touchpad_Device:enabled" "$(cat "$STATUS_FILE")"
+  hyprctl keyword "device[$Touchpad_Device]:enabled" "$(cat "$STATUS_FILE")"
 }
 
 toggle_touchpad

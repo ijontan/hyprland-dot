@@ -1,5 +1,5 @@
 
-(defpoll CLOCK_DATE :interval "1s" `date +\"%I:%M:%S%p\"`)
+(defpoll CLOCK_DATE :interval "1s" :run-while sysinfo_open `date +\"%I:%M:%S%p\"`)
 
 (defwindow clock []
   :namespace "clock_wid"

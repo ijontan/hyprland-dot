@@ -5,7 +5,7 @@
 (defvar batt_volt "0V")
 
 ;; Brightness control
-(defpoll brightness :interval "2s" "brightnessctl -m | cut -d, -f4 | tr -d '%'")
+(defpoll brightness :interval "2s" :run-while sysinfo_open "brightnessctl -m | cut -d, -f4 | tr -d '%'")
 
 (defwidget bri_slider []
   (slider 

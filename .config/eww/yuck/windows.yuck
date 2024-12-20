@@ -1,30 +1,39 @@
-;;
-;; (deflisten windowsjson "scripts/getwindows.sh")
-;;
-;; (defvar wopen false)
-;;
-;; (defwidget windowIcons [winjson]
-;;   (eventbox
-;;     ;; :onclick "hyprctl"
-;;     ;; (image :path {winjson.icon})
-;;     {winjson.address}
-;;   )
-;; )
-;;
-;; (defwindow windows []
-;;   :namespace "windows"
-;;   :monitor 0
-;;   :geometry (geometry :anchor "left center" :x "0px" :y "0px")
-;;   :stacking "fg"
-;;   (popout_left
-;;     :varname "wopen"
-;;     :var wopen
-;;     (box
-;;       :orientation "v" :gap "10px"
-;;       (for win in windowsjson
-;;         (windowIcons :winjson {win})
-;;       )
-;;     )
-;;   )
-;; )
-;;
+
+(deflisten windowsjson "scripts/getwindows.sh")
+;; (defpoll windowsjson :interval "10s" "scripts/getWindowIcon.py | jq")
+;; (defvar windowsjson '[{"img": "/ok", "title": "ok1"} ,{"img": "hi", "title": "ok2"} ,{"img": "hello", "title": "ok3"}]')
+
+(defvar wopen false)
+
+(defwidget windowIcons [winjson]
+  (eventbox
+    :onclick "hyprctl dispatch focuswindow 'pid:${winjson.pid}'"
+    (box
+      (tooltip
+        (box :orientation "v"
+          (label :text "${winjson.title}")
+          (label :text "${winjson.workspace}")
+        )
+        (image :path {winjson.img})
+      )
+    )
+  )
+)
+
+(defwindow windows []
+  :namespace "windows"
+  :monitor 0
+  :geometry (geometry :anchor "bottom center" :x "0px" :y "0px")
+  :stacking "fg"
+  (popout_bot
+    :varname "wopen"
+    :var wopen
+    (box
+      :orientation "h" :spacing 10
+      (for win in windowsjson
+        (windowIcons :winjson {win})
+      )
+    )
+  )
+)
+

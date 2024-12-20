@@ -1,12 +1,13 @@
 #!/bin/bash
 
 
-SCRIPT_DIR=$HOME/.config/eww/scripts
+# SCRIPT_DIR=$HOME/.config/eww/scripts
 
 openwin(){
 	eww update sysinfo_open=true wsopen=true
 	eww o clock
 }
+openwin
 
-pkill -f $SCRIPT_DIR/closebar\.sh || openwin
-$SCRIPT_DIR/closebar.sh &
+# pkill -f $SCRIPT_DIR/closebar\.sh || openwin
+# $SCRIPT_DIR/closebar.sh &
