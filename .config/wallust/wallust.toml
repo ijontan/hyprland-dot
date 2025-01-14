@@ -26,35 +26,35 @@ palette = "dark16"
 #  11 - 49    Colors are more similar than opposite
 #  100        Colors are exact opposite
 threshold = 6
-# check_contrast = true
+check_contrast = true
 
 [templates]
-cava.template = 'templates/colors-cava'
+cava.template = 'colors-cava'
 cava.target = '~/.config/cava/config'
 
-hypr.template = 'templates/colors-hyprland.conf'
+hypr.template = 'colors-hyprland.conf'
 hypr.target = '~/.config/hypr/wallust/wallust-hyprland.conf'
 
-rofi.template = 'templates/colors-rofi.rasi'
+rofi.template = 'colors-rofi.rasi'
 rofi.target = '~/.config/rofi/wallust/colors-rofi.rasi'
 
-eww.template = 'templates/colors-eww.scss'
+eww.template = 'colors-eww.scss'
 eww.target = '~/.config/eww/wallust/colors-eww.scss'
 
-kitty.template = 'templates/colors-kitty.conf'
+kitty.template = 'colors-kitty.conf'
 kitty.target = '~/.config/kitty/kitty.conf'
 
-swaync.template = 'templates/colors-swaync.css'
+swaync.template = 'colors-swaync.css'
 swaync.target = '~/.config/swaync/wallust/colors-wallust.css'
 
-wlogout.template = 'templates/colors-swaync.css'
+wlogout.template = 'colors-swaync.css'
 wlogout.target = '~/.config/wlogout/wallust/colors-wallust.css'
 
-#macchina.template = 'templates/colors-macchina.toml'
+#macchina.template = 'colors-macchina.toml'
 #macchina.target = '~/.config/macchina/themes/wallust.toml'
 
-#wezterm.template = 'templates/colors-wezterm.toml'
+#wezterm.template = 'colors-wezterm.toml'
 #wezterm.target = '~/.config/wezterm/colors/wallust.toml'
 
-#zathura.template = 'templates/colors-zathura'
+#zathura.template = 'colors-zathura'
 #zathura.target = '~/.config/zathura/zathurarc'

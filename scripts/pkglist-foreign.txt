@@ -1,15 +1,12 @@
-android-studio
 ani-cli
 armcord-bin
 bibata-cursor-theme
-brave-bin
 bun-bin
 catppuccin-fcitx5-git
 catppuccin-gtk-theme-mocha
 cava-git
 coppwr
 eww-git
-google-chrome
 hypridle-git
 hyprland-git
 hyprlock-git
@@ -26,6 +23,5 @@ stremio
 visual-studio-code-bin
 wallust-git
 wlogout
-xboxdrv
 zen-browser-bin
 zoom

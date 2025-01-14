@@ -9,7 +9,6 @@ bc
 blueman
 brightnessctl
 btop
-calf
 chromium
 cliphist
 cups
@@ -36,7 +35,6 @@ fcitx5-rime
 fd
 flatpak
 fzf
-gamescope
 git
 git-delta
 github-cli
@@ -106,7 +104,6 @@ refind
 rime-pinyin-zhwiki
 ripgrep
 rofi-wayland
-rog-control-center
 samba
 sbsigntools
 sddm
@@ -116,7 +113,6 @@ socat
 sof-firmware
 steam
 stow
-supergfxctl
 swappy
 swaync
 switcheroo-control
@@ -139,7 +135,6 @@ xarchiver
 xdg-desktop-portal-hyprland
 xdg-user-dirs
 yt-dlp
-zed
 zip
 zram-generator
 zsh
