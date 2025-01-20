@@ -6,6 +6,7 @@ UserConfigs="$HOME/.config/hypr/UserConfigs"
 
 declare -A menu_options=(
     ["Hyprland"]="$HOME/.config/hypr"
+    ["Wlogout"]="$HOME/.config/wlogout/"
     ["Eww"]="$HOME/.config/eww"
     ["Swaync"]="$HOME/.config/swaync"
     ["Kitty"]="$HOME/.config/kitty"

@@ -2,35 +2,36 @@
     "label" : "lock",
     "action" : "$HOME/.config/hypr/scripts/LockScreen.sh",
     "text" : "Lock",
-    "keybind" : "l"
+    "keybind" : "1",
 }
 {
     "label" : "reboot",
     "action" : "systemctl reboot",
     "text" : "Reboot",
-    "keybind" : "r"
+    "keybind" : "2",
 }
 {
     "label" : "shutdown",
     "action" : "systemctl poweroff",
     "text" : "Shutdown",
-    "keybind" : "s"
+    "keybind" : "3",
 }
 {
     "label" : "logout",
     "action" : "loginctl kill-session $XDG_SESSION_ID",
     "text" : "Logout",
-    "keybind" : "e"
+    "keybind" : "4"
+    "width" : "1"
 }
 {
     "label" : "suspend",
     "action" : "systemctl suspend",
     "text" : "Suspend",
-    "keybind" : "u"
+    "keybind" : "5"
 }
 {
     "label" : "hibernate",
     "action" : "systemctl hibernate",
     "text" : "Hibernate",
-    "keybind" : "h"
+    "keybind" : "6"
 }
