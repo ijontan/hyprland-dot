@@ -4,7 +4,7 @@
 # SCRIPT_DIR=$HOME/.config/eww/scripts
 
 openwin(){
-	eww update sysinfo_open=true wsopen=true
+	eww update sysinfo_open=true wsopen=true wopen=true
 	eww o clock
 }
 openwin

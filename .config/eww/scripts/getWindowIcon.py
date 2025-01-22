@@ -20,7 +20,6 @@ def resolveIconPath(iconName):
 def mapWindow(w):
     result = {
         "img": resolveIconPath(w["class"]),
-        "workspace": w["workspace"]["name"],
         "title": w["title"],
         "pid": w["pid"]
     }
@@ -29,6 +28,20 @@ def mapWindow(w):
 
 windows = json.loads(os.popen("hyprctl -j clients").read())
 filtered_windows = list(filter(lambda w: w["workspace"]["id"] != -1, windows))
-mapped_windows = list(map(mapWindow, filtered_windows))
-print(json.dumps(mapped_windows), flush=True)
+ret = []
+for window in filtered_windows:
+    workspaceName = window["workspace"]["name"]
+    splitted = workspaceName.split(':', 1)
+    workspaceName = splitted[-1]
+    found = False
+    for group in ret:
+        if group["workspace"] == workspaceName:
+            group["windows"].append(mapWindow(window))
+            found = True
+    if not found:
+        ret.append({"workspace": workspaceName, "windows": [mapWindow(window)]})
+
+print(json.dumps(sorted(ret, key=lambda x: x["workspace"])))
+# mapped_windows = list(map(mapWindow, filtered_windows))
+# print(json.dumps(mapped_windows), flush=True)
 exit()

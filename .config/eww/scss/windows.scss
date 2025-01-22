@@ -4,3 +4,59 @@
   border: 2px solid $color10;
   border-bottom: 0px;
 }
+
+.group {
+  border-radius: 6px;
+  background-color: rgba($color: #ffffff, $alpha: 0.06);
+  transition: all;
+  transition-duration: 500ms;
+}
+
+.group:hover {
+  border-radius: 10px;
+  background-color: rgba($color: #ffffff, $alpha: 0.1);
+}
+
+.group-box {
+  padding: 6px 16px 6px 16px;
+}
+
+.workspace-title {
+  padding: 3px 0px 3px 10px;
+  text-shadow: 0px 0px 10px rgba($color: $foreground, $alpha: 0.9);
+  font-weight: bold;
+  font-size: 0.8em;
+  transition: all;
+  transition-duration: 500ms;
+}
+
+.group:hover .workspace-title {
+  text-shadow: 2px 2px 5px rgba($color: $foreground, $alpha: 1.0);
+}
+
+.window-icon {
+  transition: all;
+  transition-duration: 500ms;
+  margin: 0px 5px;
+}
+
+.window {
+  border-radius: 10px;
+}
+
+.window:hover .window-icon {
+  background-color: rgba($color: $foreground, $alpha: 0.06);
+  box-shadow: 0px 0px 10px 3px rgba($color: $foreground, $alpha: 0.1);
+}
+
+.window-title {
+  opacity: 0.6;
+  padding: 0px 10px 0px 10px;
+  font-size: 0.6em;
+  transition: all;
+  transition-duration: 500ms;
+}
+
+.window:hover .window-title {
+  opacity: 1;
+}
