@@ -34,6 +34,15 @@ change_kbd_backlight() {
 	brightnessctl -d *::kbd_backlight set "$1" && get_icon && notify_user
 }
 
+turn_off() {
+	brightnessctl -sd *::kbd_backlight set 0
+}
+
+turn_on() {
+	brightnessctl -rd *::kbd_backlight
+}
+
+
 # Execute accordingly
 case "$1" in
 	"--get")
@@ -44,6 +53,12 @@ case "$1" in
 		;;
 	"--dec")
 		change_kbd_backlight "30%-"
+		;;
+	"--off")
+		turn_off
+		;;
+	"--on")
+		turn_on
 		;;
 	*)
 		get_kbd_backlight

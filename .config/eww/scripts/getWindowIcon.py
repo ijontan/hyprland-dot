@@ -6,8 +6,17 @@ import gi
 gi.require_version('Gtk', '3.0')
 from gi.repository import Gtk
 
+home = os.environ["HOME"]
+iconMap = {
+    "com.mitchellh.ghostty": home + "/Pictures/icons/ghostty.png",
+    "zen": home + "/Pictures/icons/Zen.svg"
+}
 
 def resolveIconPath(iconName):
+    if iconName == "com.mitchellh.ghostty":
+        iconName ="terminal"
+    if iconName in iconMap:
+        return iconMap[iconName]
     iconTheme = Gtk.IconTheme.get_default()
     iconFile = iconTheme.lookup_icon(iconName.lower(
     ),  32, 0)
@@ -21,7 +30,8 @@ def mapWindow(w):
     result = {
         "img": resolveIconPath(w["class"]),
         "title": w["title"],
-        "pid": w["pid"]
+        "pid": w["pid"],
+        "focusHistoryID": w["focusHistoryID"]
     }
     return result
 

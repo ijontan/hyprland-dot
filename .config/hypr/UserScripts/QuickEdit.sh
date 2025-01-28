@@ -13,18 +13,19 @@ declare -A menu_options=(
     ["Wallust"]="$HOME/.config/wallust"
     ["Rofi"]="$HOME/.config/rofi"
     ["Neovim"]="$HOME/.config/nvim"
+    ["Ghostty"]="$HOME/.config/ghostty"
     ["Keyd"]="/etc/keyd"
 )
 
 main() {
-  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -i -term=kitty -dmenu | cut -d. -f1)
+  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -i -term=ghostty -dmenu | cut -d. -f1)
 
   if [ -z "$choice" ]; then
     exit 1
   fi
   
   path="${menu_options[$choice]}"
-  kitty -d $path nvim $path
+  ghostty --working-directory=$path --command="nvim $path"
 }
 
 pkill rofi || main

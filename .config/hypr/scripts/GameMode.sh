@@ -18,14 +18,16 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
         keyword general:border_size 1;\
         keyword decoration:rounding 0"
     swww kill 
+    killall hypridle
     notify-send -e -u low -i "$notif" "gamemode enabled. All animations off"
     exit
 else
-	swww init && swww img "$HOME/.config/rofi/.current_wallpaper"
+        hyprctl dispatch exec swww-daemon && swww img "$HOME/.config/rofi/.current_wallpaper"
 	sleep 0.1
 	${SCRIPTSDIR}/PywalSwww.sh
 	sleep 0.5
 	${SCRIPTSDIR}/Refresh.sh	 
+    hyprctl dispatch exec hypridle
     notify-send -e -u normal -i "$notif" "gamemode disabled. All animations normal"
     hyprctl reload
     exit
