@@ -1,0 +1,22 @@
+
+window-inherit-working-directory	= true
+
+confirm-close-surface	= false
+window-decoration		= false
+gtk-titlebar			= false
+title					= 
+
+background-opacity = 0.95
+theme = wallust
+
+cursor-style-blink = false
+window-padding-color = extend
+
+keybind = ctrl+s>r=reload_config
+keybind = ctrl+s>x=close_surface
+keybind = ctrl+s>n=new_window
+
+keybind = ctrl+minus=unbind
+keybind = ctrl+equal=unbind
+keybind = ctrl+shift+minus=decrease_font_size:1
+keybind = ctrl+shift+plus=increase_font_size:1

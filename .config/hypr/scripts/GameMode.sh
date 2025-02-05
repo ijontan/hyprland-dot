@@ -22,7 +22,7 @@ if [ "$HYPRGAMEMODE" = 1 ] ; then
     notify-send -e -u low -i "$notif" "gamemode enabled. All animations off"
     exit
 else
-        hyprctl dispatch exec swww-daemon && swww img "$HOME/.config/rofi/.current_wallpaper"
+        hyprctl dispatch exec swww-daemon && sleep 0.1 && swww img "$HOME/.config/rofi/.current_wallpaper"
 	sleep 0.1
 	${SCRIPTSDIR}/PywalSwww.sh
 	sleep 0.5

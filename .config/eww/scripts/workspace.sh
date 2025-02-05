@@ -36,8 +36,7 @@ for num in ${!ic[@]}; do
   icon=${ic[$num]}
   output=$output"    (button :onclick \"hyprctl dispatch workspace $num\" :class \"w0${!open}${!focus}\" \"$icon\")"
 done
-output=$output"  )"
-output=$output")"
+output=$output"))"
 echo $output
 }
 

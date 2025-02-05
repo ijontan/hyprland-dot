@@ -17,11 +17,11 @@ selected-active-background: {{color9}};
 selected-active-foreground: {{foreground}};
 selected-normal-background: {{color7}};
 selected-normal-foreground: {{foreground}};
-selected-urgent-background: {{color11}};
+selected-urgent-background: {{color10}};
 selected-urgent-foreground: {{foreground}};
 
 background-color: {{background}};
-background: rgba(0,0,0,0.7);
+background: rgba({{background | rgb}},0.9);
 foreground: {{color15}};
 border-color: {{color9}};
 }

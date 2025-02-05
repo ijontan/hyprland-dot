@@ -28,6 +28,7 @@ def resolveIconPath(iconName):
 
 def mapWindow(w):
     result = {
+        "address": w["address"],
         "img": resolveIconPath(w["class"]),
         "title": w["title"],
         "pid": w["pid"],

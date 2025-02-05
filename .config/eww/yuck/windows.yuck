@@ -8,7 +8,7 @@
 (defwidget windowIcons [winjson]
   (eventbox
     :class "window"
-    :onclick "hyprctl dispatch focuswindow 'pid:${winjson.pid}'"
+    :onclick "hyprctl dispatch focuswindow 'address:${winjson.address}'"
     :onrightclick "kill -9 ${winjson.pid}"
     (box
       :class "window-box"

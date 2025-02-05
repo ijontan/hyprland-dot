@@ -16,6 +16,16 @@
   )
 )
 
+(defvar hyprsunset_active false)
+
+(defwidget sunset_button []
+  (button 
+    :onclick "scripts/hyprsunsetToggle.sh"
+    :orientation 'h'
+    `${hyprsunset_active ? " " : " "}`
+  )
+)
+
 ;; Volume control
 (deflisten volume "scripts/volume.sh --volume --listen")
 (deflisten volume_icon "scripts/volume.sh --icon --listen")
@@ -67,6 +77,7 @@
     (box :space-evenly false :spacing 7
       (vol_slider)
       (bri_slider)
+      (sunset_button)
       (systray :class "tray" :spacing 7 :icon-size 20)
       (battery)
       (clock)
