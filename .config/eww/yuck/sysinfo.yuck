@@ -18,10 +18,10 @@
 
 (defvar hyprsunset_active false)
 
+;; Sunset button
 (defwidget sunset_button []
   (button 
     :onclick "scripts/hyprsunsetToggle.sh"
-    :orientation 'h'
     `${hyprsunset_active ? " " : " "}`
   )
 )
@@ -57,9 +57,12 @@
 (defpoll DATE :interval "5s" :run-while sysinfo_open `date +\"  %b %d, %a,   %I:%M\"`)
 
 (defwidget clock []
-  (box :class "clockbox" :orientation "h" :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
-    DATE
-    TOD
+  (eventbox
+    :onclick "scripts/alarm.sh open"
+    (box :class "clockbox" :orientation "h" :valign "center" :halign "start" :space-evenly "false" :vexpand "false" :hexpand "false"
+      DATE
+      TOD
+    )
   )
 )
 

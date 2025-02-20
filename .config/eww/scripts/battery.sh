@@ -9,7 +9,7 @@ get_volt() {
 }
 
 get_perc() {
-	acpi | awk -F ': |, ' 'END {print $3}' | tr -d \%,
+	acpi | grep "Battery 0"| awk -F ': |, ' 'END {print $3}' | tr -d \%,
 }
 
 get_icon() {

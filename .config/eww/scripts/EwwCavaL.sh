@@ -16,8 +16,7 @@ data_format = ascii
 ascii_max_range = 120
 
 [smoothing]
-integral = 40
-gravity = 130
+noise_reduction = 70
 EOF
 
 sleep 0.2

@@ -1,6 +1,7 @@
 ;; (include "yuck/bar.yuck")
 (include "./yuck/components/popout.yuck")
 (include "./yuck/components/slider.yuck")
+(include "yuck/alarm.yuck")
 (include "yuck/calendar.yuck")
 (include "yuck/music.yuck")
 (include "yuck/wswid.yuck")
