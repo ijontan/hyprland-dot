@@ -13,7 +13,7 @@ open() {
 }
 
 set-alarm() {
-    echo "notify sent $3" | at "$2"
+    echo "notify-sent $3 -t 0 -a 'Alarm'; pw-play ~/sounds/interface.mp3" | at "$2"
     eww c alarm
 }
 

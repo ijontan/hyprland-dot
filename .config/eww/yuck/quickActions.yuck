@@ -17,7 +17,7 @@
 (defvar bl_hoverlost "")
 
 (defwidget actionbox_dot []
-  (box :width 4 :height 4 :style "background: transparent;")
+  (box :width 8 :height 8 :style "background: transparent;")
 )
 
 (defwindow qa_ct []
@@ -77,7 +77,7 @@
   :namespace "qa_bl"
   :monitor 0
   :geometry (geometry :anchor "left bottom" :x "0px" :y "0px")
-  :stacking "overlay"
+  :stacking "fg"
   (eventbox
     :onhover bl_hover
     :onhoverlost bl_hoverlost
