@@ -3,13 +3,12 @@
 
 SCRIPT_DIR=$HOME/.config/eww/scripts
 
-main(){
-	hyprctl dispatch workspace $1
-}
 Workspace(){
+	CloseSpecial
 	hyprctl dispatch workspace $1
 }
 MoveToWorkspace(){
+	CloseSpecial
 	hyprctl dispatch movetoworkspace $1
 }
 MoveToWorkspaceSilent(){
@@ -17,6 +16,12 @@ MoveToWorkspaceSilent(){
 }
 openwin(){
 	eww update wsopen=true
+}
+CloseSpecial(){
+	active=$(hyprctl -j monitors | jq --raw-output '.[] | select(.focused==true).specialWorkspace.name | split(":") | if length > 1 then .[1] else "" end')
+	if [[ ${#active} -gt 0 ]]; then
+    	hyprctl dispatch togglespecialworkspace "$active"
+	fi
 }
 
 case "$1" in

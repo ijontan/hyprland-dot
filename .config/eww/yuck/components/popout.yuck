@@ -3,7 +3,8 @@
   (eventbox 
     :onhover "eww update ${varname}=true; ${onhover}"
     :onhoverlost "eww update ${varname}=false; ${onhoverlost}"
-    (box :space-evenly false :orientation 'v' :style "padding-bottom: 10px;"
+    (box :space-evenly false :orientation 'v' 
+      :style "padding-bottom: 10px;"
       (revealer
         :transition "slidedown"
         :reveal var

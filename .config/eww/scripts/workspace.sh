@@ -25,7 +25,7 @@ num=$(hyprctl activeworkspace -j |  jq '.id')
 export f"$num"="$num"
 #output eww widget
 output="(eventbox :onscroll \"echo {} | sed -e 's/up/-1/g' -e 's/down/+1/g' | xargs hyprctl dispatch workspace\""
-output=$output"  (box	:class \"works\"	:orientation \"h\" :spacing 5 :space-evenly \"true\""
+output=$output"  (box	:class \"works\"	:orientation \"h\" :spacing 1 :space-evenly \"true\""
 
 for num in ${!ic[@]}; do
   if [[ "$num" == '0' ]]; then
@@ -34,7 +34,7 @@ for num in ${!ic[@]}; do
   open="o$num"
   focus="f$num"
   icon=${ic[$num]}
-  output=$output"    (button :onclick \"hyprctl dispatch workspace $num\" :class \"w0${!open}${!focus}\" \"$icon\")"
+  output=$output"    (button :onclick \"./scripts/openWSWid.sh ws $num\" :class \"w0${!open}${!focus}\" \"$icon\")"
 done
 output=$output"))"
 echo $output

@@ -1,5 +1,6 @@
 
 window-inherit-working-directory	= true
+alpha-blending	= linear-corrected
 
 confirm-close-surface	= false
 window-decoration		= false
