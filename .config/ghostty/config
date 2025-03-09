@@ -2,6 +2,7 @@
 window-inherit-working-directory	= true
 alpha-blending	= linear-corrected
 
+resize-overlay = never
 confirm-close-surface	= false
 window-decoration		= false
 gtk-titlebar			= false

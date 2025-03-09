@@ -1,13 +1,14 @@
 #!/bin/bash
 
 on-lid() {
-    hyprctl reload && hyprctl keyword monitor "HDMI-A-1, disabled"
-    sleep 1 
+    hyprctl keyword monitor "HDMI-A-1, disabled"
+    sleep 0.5
     hyprctl reload
 }
 
 off-lid() {
-    hyprctl keyword monitor "eDP-1, disabled" && hyprctl keyword monitor "eDP-2, disabled"
+    hyprctl keyword monitor "eDP-1, disabled"
+    hyprctl keyword monitor "eDP-2, disabled"
 }
 
 main() {
@@ -22,4 +23,9 @@ main() {
     eww open-many wswid sysinfo windows
 }
 
-main "$@"
+no_of_monitor=$(hyprctl monitors -j | jq length)
+if [[ "$no_of_monitor" == "1" ]]; then
+    systemctl suspend
+else
+    main "$@"
+fi

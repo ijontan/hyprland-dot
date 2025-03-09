@@ -5,18 +5,22 @@
 
 /* ---- Configuration ---- */ 
 configuration {
-  modi: "drun";
 }
 
 /* ---- Window ---- */
 window {
-  width: 50%;
+  width: 30%;
+  height: 50%;
   border-radius: 15px;
+}
+
+/* ---- MainBox ---- */
+mainbox {
+	padding: 15% 30%;
 }
 
 /* ---- Inputbar ---- */
 inputbar {
-  background-image: url("~/.config/rofi/.current_wallpaper", width);
 }
 
 /* ---- Imagebox ---- */

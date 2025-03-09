@@ -8,7 +8,6 @@ Workspace(){
 	hyprctl dispatch workspace $1
 }
 MoveToWorkspace(){
-	CloseSpecial
 	hyprctl dispatch movetoworkspace $1
 }
 MoveToWorkspaceSilent(){

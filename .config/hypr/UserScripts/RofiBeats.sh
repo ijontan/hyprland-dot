@@ -25,7 +25,7 @@ notification() {
 
 # Main function
 main() {
-  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -dmenu -i -p "")
+  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -dmenu -config ~/.config/rofi/config-rofi-Beats.rasi -i -p "")
 
   if [ -z "$choice" ]; then
     exit 1
@@ -33,7 +33,7 @@ main() {
 
   link="${menu_options[$choice]}"
 
-  notification "$choice"
+  notification "$choice"rofibea
   
   if ! [ -f /home/itan/Downloads/www.youtube.com_cookies.txt ]; then
     if [[ $link == *playlist* ]]; then

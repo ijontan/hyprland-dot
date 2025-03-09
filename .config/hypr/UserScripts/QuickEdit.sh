@@ -14,18 +14,19 @@ declare -A menu_options=(
     ["Rofi"]="$HOME/.config/rofi"
     ["Neovim"]="$HOME/.config/nvim"
     ["Ghostty"]="$HOME/.config/ghostty"
+    ["Ags"]="$HOME/.config/ags"
     ["Keyd"]="/etc/keyd"
 )
 
 main() {
-  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -i -term=ghostty -dmenu | cut -d. -f1)
+  choice=$(printf "%s\n" "${!menu_options[@]}" | rofi -i -term=kitty -config ~/.config/rofi/config-compact.rasi -dmenu | cut -d. -f1)
 
   if [ -z "$choice" ]; then
     exit 1
   fi
   
   path="${menu_options[$choice]}"
-  ghostty --working-directory=$path --command="nvim $path"
+  kitty -d $path nvim $path
 }
 
 pkill rofi || main

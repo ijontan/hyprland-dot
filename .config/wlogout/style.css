@@ -9,7 +9,8 @@ window {
     font-family: Poppins;
     font-size: 16pt;
     letter-spacing: 0.1em;
-    color: #cdd6f4; /* text */
+    color: #cdd6f4;
+    /* text */
     background-color: rgba(30, 30, 30, 0.6);
 }
 
@@ -20,42 +21,46 @@ button {
     margin: 20px;
     background-color: rgba(200, 220, 255, 0);
     animation: gradient_f 20s ease-in infinite;
-    border-radius: 90px; /* Increased border radius for a more rounded look */
-    box-shadow: 0 0 0px #00000000; 
+    border-radius: 90px;
+    /* Increased border radius for a more rounded look */
+    box-shadow: 0 0 0px #00000000;
     transition-duration: 0.4s;
     letter-spacing: 0.5em;
 }
 
 button:focus {
-    background-color: @color2; 
+    background-color: @color2;
     color: #1e1e1e;
     background-size: 50%;
-    border-radius: 80px; 
+    border-radius: 80px;
     transition: all 0.6s cubic-bezier(.55, 0.0, .28, 1.682);
-    box-shadow: 3 3 20px @color2; 
+    box-shadow: 3 3 20px @color2;
 }
 
 button:hover {
-    background-color: @color2; 
+    background-color: @color2;
     color: #1e1e1e;
     background-size: 50%;
-    border-radius: 80px; 
+    border-radius: 80px;
     transition: all 0.6s cubic-bezier(.55, 0.0, .28, 1.682);
-    box-shadow: 0 0 25px @color2; 
+    box-shadow: 0 0 25px @color2;
 }
 
 /* Adjust the size of the icon or content inside the button */
 button span {
-    font-size: 1.2em; /* Increase the font size */
+    font-size: 1.2em;
+    /* Increase the font size */
 }
 
 
 #lock {
     background-image: image(url("./icons/lock.png"));
 }
+
 #lock:focus {
     background-image: image(url("./icons/lock-hover.png"));
 }
+
 #lock:hover {
     background-image: image(url("./icons/lock-hover.png"));
 }
@@ -63,9 +68,11 @@ button span {
 #logout {
     background-image: image(url("./icons/logout.png"));
 }
+
 #logout:focus {
     background-image: image(url("./icons/logout-hover.png"));
 }
+
 #logout:hover {
     background-image: image(url("./icons/logout-hover.png"));
 }
@@ -73,9 +80,11 @@ button span {
 #suspend {
     background-image: image(url("./icons/sleep.png"));
 }
+
 #suspend:focus {
     background-image: image(url("./icons/sleep-hover.png"));
 }
+
 #suspend:hover {
     background-image: image(url("./icons/sleep-hover.png"));
 }
@@ -83,9 +92,11 @@ button span {
 #shutdown {
     background-image: image(url("./icons/power.png"));
 }
+
 #shutdown:focus {
     background-image: image(url("./icons/power-hover.png"));
 }
+
 #shutdown:hover {
     background-image: image(url("./icons/power-hover.png"));
 }
@@ -93,9 +104,11 @@ button span {
 #reboot {
     background-image: image(url("./icons/restart.png"));
 }
+
 #reboot:focus {
     background-image: image(url("./icons/restart-hover.png"));
 }
+
 #reboot:hover {
     background-image: image(url("./icons/restart-hover.png"));
 }
@@ -103,9 +116,11 @@ button span {
 #hibernate {
     background-image: image(url("./icons/hibernate.png"));
 }
+
 #hibernate:focus {
     background-image: image(url("./icons/hibernate-hover.png"));
 }
+
 #hibernate:hover {
     background-image: image(url("./icons/hibernate-hover.png"));
 }

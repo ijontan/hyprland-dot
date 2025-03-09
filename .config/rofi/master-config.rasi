@@ -32,24 +32,24 @@ configuration {
 
     text-selected:               @background;
     text-color:                  @foreground;
-    border-color:                @selected;
+    // border-color:                @selected;
 }
 
 /* ---- Window ---- */
 window {
     // Default
     enabled:                    true;
-    fullscreen:                 false;
+    fullscreen:                 true;
     transparency:               "real";
     cursor:                     "default";
     spacing:                    0px;
-    border:                     2px;
-    border-radius:              30px;
+    // border:                     2px;
+    // border-radius:              30px;
     location:                   center;
     anchor:                     center;
 
     // Style Values
-    width:                      50%;
+    // width:                      50%;
     background-color:           @background;
 }
 
@@ -71,19 +71,17 @@ inputbar {
     background-color:            transparent;
     border-radius:               25px;
     orientation:                 horizontal;
-    children:                    ["entry", "dummy", "mode-switcher" ];
-    background-image:            url("~/.config/rofi/.current_wallpaper", width);
+    children:                    ["entry"];
 }
 
 /* ---- Entry input ---- */
 entry {
     enabled:                     true;
-    expand:                      false;
-    width:                       20%;
-    padding:                     10px;
-    border-radius:               12px;
-    background-color:            @selected;
-    text-color:                  @text-selected;
+    expand:                      true;
+    padding:                     20px;
+    border-radius:               20px;
+    background-color:            @background;
+    text-color:                  @foreground;
     cursor:                      text;
     placeholder:                 "🖥️ Search "; // << Search symbol
     placeholder-color:           inherit;
@@ -105,7 +103,7 @@ listview {
     lines:                       6;
     cycle:                       true;
     dynamic:                     true;
-    scrollbar:                   true;
+    scrollbar:                   false;
     layout:                      vertical;
     reverse:                     false;
     fixed-height:                true;
@@ -144,16 +142,17 @@ button selected {
 
 /* ---- Scrollbar ---- */
 scrollbar {
-    width:        4px ;
+    width:        2px ;
     border:       0;
     handle-color: @border-color;
-    handle-width: 8px ;
+    handle-width: 2px ;
     padding:      0;
 }
 
 /* ---- Elements ---- */
 element {
     enabled:                     true;
+    expand:                      false;
     spacing:                     5px;
     padding:                     20px;
     border-radius:               12px;

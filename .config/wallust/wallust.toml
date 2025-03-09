@@ -27,7 +27,7 @@ eww.template = 'colors-eww.scss'
 eww.target = '~/.config/eww/wallust/colors-eww.scss'
 
 kitty.template = 'colors-kitty.conf'
-kitty.target = '~/.config/kitty/kitty.conf'
+kitty.target = '~/.config/kitty/theme.conf'
 
 swaync.template = 'colors-swaync.css'
 swaync.target = '~/.config/swaync/wallust/colors-wallust.css'

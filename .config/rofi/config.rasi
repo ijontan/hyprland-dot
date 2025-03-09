@@ -12,6 +12,12 @@ configuration {
 window {
     width:	50%;
 }
+
+/* ---- MainBox ---- */
+mainbox {
+	padding: 15% 30%;
+}
+
 /* ---- Listview ---- */
 listview {
   columns: 4;

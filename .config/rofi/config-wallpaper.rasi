@@ -12,6 +12,11 @@ window {
   width: 60%;
 }
 
+/* ---- MainBox ---- */
+mainbox {
+	padding: 20px 20px;
+}
+
 /* ---- Imagebox ---- */
 imagebox {
   orientation: vertical;
@@ -28,20 +33,37 @@ entry {
 /* ---- Listview ---- */
 listview {
   columns: 4;
+  fixed-columns: false;
   lines: 3;
+  dynamic: true;
   flow: horizontal;
+  fixed-height: false;
+
 }
 
 /* ---- Element ---- */
 element {
   orientation: vertical;
-  padding: 0px;
+  padding: 0px 0px 0px 0px;
   spacing: 0px;
   border-radius: 15px;
+  children: [ element-icon-box ];
+}
+
+element-icon-box {
+  children: [ element-icon ];
+
+}
+
+element selected.normal {
+  border: 5px;
 }
 
 element-icon {
-  size: 20%;
+  size: 40%;
+  margin: 0px;
+  vertical-align: 0;
+  expand: false;
 }
 
 element-text {

@@ -21,7 +21,7 @@ selected-urgent-background: {{color10}};
 selected-urgent-foreground: {{foreground}};
 
 background-color: {{background}};
-background: rgba({{background | rgb}},0.9);
+background: rgba({{background | rgb}},0.6);
 foreground: {{color15}};
 border-color: {{color9}};
 }
