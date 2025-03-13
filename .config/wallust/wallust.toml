@@ -26,6 +26,9 @@ rofi.target = '~/.config/rofi/wallust/colors-rofi.rasi'
 eww.template = 'colors-eww.scss'
 eww.target = '~/.config/eww/wallust/colors-eww.scss'
 
+ags.template = 'colors-ags.scss'
+ags.target = '~/.config/ags/wallust/colors-ags.scss'
+
 kitty.template = 'colors-kitty.conf'
 kitty.target = '~/.config/kitty/theme.conf'
 

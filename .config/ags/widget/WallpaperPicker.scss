@@ -5,14 +5,12 @@
     @return string.unquote("alpha(#{$c},#{$a})");
 }
 
-// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
-
-window#launcher {
+window#wallpaperPicker {
     all: unset;
     background-color: gtkalpha(consts.$background, .5);
 
 
-    box.Applauncher {
+    box.wallpaperPicker {
         border-radius: 11px;
         padding: 2rem;
         color: consts.$foreground;
@@ -51,7 +49,7 @@ window#launcher {
 
         button {
             background-color: gtkalpha(consts.$foreground, 0);
-            padding: 1rem 3rem;
+            padding: 0.5rem 1rem;
             border-radius: 1rem;
 
             &:focus:hover {
@@ -68,8 +66,7 @@ window#launcher {
             }
 
             image {
-                -gtk-icon-size: 5em;
-                padding-bottom: .5em;
+                -gtk-icon-size: 30em;
             }
 
             label.name {
