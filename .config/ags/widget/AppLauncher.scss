@@ -1,5 +1,5 @@
 @use "sass:string";
-@use "./wallust/colors-ags.scss" as consts;
+@use "../wallust/colors-ags.scss" as consts;
 
 @function gtkalpha($c, $a) {
     @return string.unquote("alpha(#{$c},#{$a})");
@@ -78,6 +78,10 @@ window#launcher {
             }
 
             &:focus label.name {
+                letter-spacing: 0.3rem;
+            }
+
+            &:hover label.name {
                 letter-spacing: 0.3rem;
             }
 

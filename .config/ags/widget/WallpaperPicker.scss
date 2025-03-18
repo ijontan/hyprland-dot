@@ -1,5 +1,5 @@
 @use "sass:string";
-@use "./wallust/colors-ags.scss" as consts;
+@use "../wallust/colors-ags.scss" as consts;
 
 @function gtkalpha($c, $a) {
     @return string.unquote("alpha(#{$c},#{$a})");
@@ -49,7 +49,7 @@ window#wallpaperPicker {
 
         button {
             background-color: gtkalpha(consts.$foreground, 0);
-            padding: 0.5rem 1rem;
+            padding: 1rem;
             border-radius: 1rem;
 
             &:focus:hover {
@@ -65,8 +65,10 @@ window#wallpaperPicker {
                 outline: none;
             }
 
-            image {
-                -gtk-icon-size: 30em;
+            picture {
+                border-radius: 1em;
+                box-shadow: 0.5em 0.5em 3em gtkalpha(consts.$background, .9);
+                margin-bottom: 1em;
             }
 
             label.name {
@@ -75,6 +77,10 @@ window#wallpaperPicker {
             }
 
             &:focus label.name {
+                letter-spacing: 0.3rem;
+            }
+
+            &:hover label.name {
                 letter-spacing: 0.3rem;
             }
 

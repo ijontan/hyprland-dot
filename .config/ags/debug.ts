@@ -1,3 +1,4 @@
+
 import { App } from "astal/gtk4"
 import Applauncher from "./widget/AppLauncher"
 import WallpaperPicker from "./widget/WallpaperPicker"
@@ -13,6 +14,7 @@ async function updateCSS() {
 }
 
 App.start({
+    instanceName: "debug",
     css: "/tmp/style.css",
     main() {
         Applauncher()

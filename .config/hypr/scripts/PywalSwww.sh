@@ -37,5 +37,5 @@ if [ "$ln_success" = true ]; then
     # wal -i "$wallpaper_path"
 	echo 'about to execute wal'
     # execute pywal skipping tty and terminal changes
-    wallust run "$wallpaper_path" -q &
+    wallust run "$wallpaper_path" -q && ags request reload
 fi

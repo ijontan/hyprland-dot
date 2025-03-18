@@ -1,13 +1,12 @@
 import Apps from "gi://AstalApps"
 import { App, Astal, Gdk, Gtk } from "astal/gtk4"
 import { GLib, Variable } from "astal"
-import Paginate from "./components/Paginate"
+import ScrollList from "./components/Paginate"
 
 // config
 const NAME = "launcher"
-const COLUMNS = 4
-const ROWS = 5
 const HOME = GLib.getenv("HOME")
+const CROSS_AXIS_LENGTH = 4
 const PRIORITY_MAP_DIR_PATH = `${HOME}/.cache/ags`
 const PRIORITY_MAP_PATH = `${PRIORITY_MAP_DIR_PATH}/app_priority_map.json`
 
@@ -72,6 +71,7 @@ export default function Applauncher() {
 
     const text = Variable("")
     let list = text(text => apps.fuzzy_query(text).sort(sortWithPriority))
+
     const onEnter = () => {
         const app = apps.fuzzy_query(text.get())?.sort(sortWithPriority)[0]
         app.launch()
@@ -94,7 +94,7 @@ export default function Applauncher() {
                 }
             } catch (e) {
                 appPriorityMap = {}
-                console.log("not open")
+                console.log("ERROR | not open")
 
                 const data = JSON.stringify(appPriorityMap, null, "\t")
                 GLib.mkdir(PRIORITY_MAP_DIR_PATH, 0b111101101);
@@ -131,8 +131,9 @@ export default function Applauncher() {
                         onChanged={self => text.set(self.text)}
                         onActivate={onEnter}
                     />
-                    <Paginate
-                        columns={COLUMNS} rows={ROWS}
+                    <ScrollList
+                        crossAxisLength={CROSS_AXIS_LENGTH}
+                        width={1000} height={800}
                         hspacing={20} vspacing={5}
                         datas={list} buildFunction={(app) => <AppButton app={app} />}
                     />

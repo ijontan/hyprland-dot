@@ -1,4 +1,3 @@
-export default function Alarm(gdkmonitor, Gdk) {
-
+export default function Alarm() {
     return <window></window>
 }
