@@ -6,8 +6,7 @@ import { Picture } from "./components/Picture";
 
 // config
 const NAME = "wallpaperPicker"
-const COLUMNS = 4
-const ROWS = 2
+const CROSS_AXIS_LENGTH = 2
 const HOME = GLib.getenv("HOME")
 const WALLPAPER_PATH = `${HOME}/Pictures/wallpapers`
 const CHANGE_WALLPAPER_COMMAND = `${HOME}/.config/hypr/UserScripts/WallpaperChange.sh`
@@ -125,7 +124,7 @@ export default function WallpaperPicker() {
                         onActivate={onEnter}
                     />
                     <ScrollList
-                        crossAxisLength={2}
+                        crossAxisLength={CROSS_AXIS_LENGTH}
                         horizontal
                         width={1600} height={800}
                         hspacing={5} vspacing={5}

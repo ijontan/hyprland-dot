@@ -1,9 +1,5 @@
-@use "sass:string";
 @use "../wallust/colors-ags.scss" as consts;
-
-@function gtkalpha($c, $a) {
-    @return string.unquote("alpha(#{$c},#{$a})");
-}
+@use "../utils/utils.scss" as *;
 
 window#wallpaperPicker {
     all: unset;

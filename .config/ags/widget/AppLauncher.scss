@@ -1,11 +1,5 @@
-@use "sass:string";
 @use "../wallust/colors-ags.scss" as consts;
-
-@function gtkalpha($c, $a) {
-    @return string.unquote("alpha(#{$c},#{$a})");
-}
-
-// https://gitlab.gnome.org/GNOME/gtk/-/blob/gtk-3-24/gtk/theme/Adwaita/_colors-public.scss
+@use "../utils/utils.scss" as *;
 
 window#launcher {
     all: unset;
