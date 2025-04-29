@@ -20,8 +20,6 @@ S-f = overloadi(S-f, overloadt2(nav, S-f, 250), 200)
 h = overloadi(h, overloadt2(nav, h, 250), 200)
 S-h = overloadi(S-h, overloadt2(nav, S-h, 250), 200)
 
-g+f = toggle(gamemode)
-
 [nav]
 h = left
 j = down
@@ -66,4 +64,6 @@ d = d
 f = f
 space = space
 
-g+f = toggle(gamemode)
+[meta]
+
+a+s+d = toggle(gamemode)

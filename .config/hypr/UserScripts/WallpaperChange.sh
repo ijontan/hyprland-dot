@@ -17,7 +17,13 @@ echo $@
 main() {
 
   if [[ $1 ]]; then
+    magick "$1" -gravity West -crop 30%x100% /tmp/1
+    magick "$1" -gravity East -crop 70%x100% /tmp/2
     swww img $1 $SWWW_PARAMS
+    swww img /tmp/1 $SWWW_PARAMS -o DP-2
+    swww img /tmp/1 $SWWW_PARAMS -o HDMI-A-1
+    swww img /tmp/2 $SWWW_PARAMS -o eDP-1
+    swww img /tmp/2 $SWWW_PARAMS -o eDP-2
   else
     echo "Image not found."
     exit 1
@@ -26,7 +32,6 @@ main() {
 
 main $1
 
-# killall -SIGUSR1 waybar
 sleep 2
 ${SCRIPTSDIR}/PywalSwww.sh
 sleep 0.1

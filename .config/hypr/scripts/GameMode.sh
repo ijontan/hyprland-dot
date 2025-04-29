@@ -26,7 +26,7 @@ else
 	sleep 0.1
 	${SCRIPTSDIR}/PywalSwww.sh
 	sleep 0.5
-	${SCRIPTSDIR}/Refresh.sh	 
+	${SCRIPTSDIR}/Refresh.sh
     hyprctl dispatch exec hypridle
     notify-send -e -u normal -i "$notif" "gamemode disabled. All animations normal"
     hyprctl reload

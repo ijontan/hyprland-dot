@@ -1,4 +1,4 @@
-import { execAsync, Gio, GLib, Variable } from "astal";
+import { Binding, exec, execAsync, Gio, GLib, Variable } from "astal";
 import { App, Astal, Gdk, Gtk } from "astal/gtk4";
 import ScrollList from "./components/Paginate";
 import { fuzzySearch } from "../utils/fuzzySearch";
@@ -9,6 +9,7 @@ const NAME = "wallpaperPicker"
 const CROSS_AXIS_LENGTH = 2
 const HOME = GLib.getenv("HOME")
 const WALLPAPER_PATH = `${HOME}/Pictures/wallpapers`
+const CACHE_PATH = `/tmp/wallpapers`
 const CHANGE_WALLPAPER_COMMAND = `${HOME}/.config/hypr/UserScripts/WallpaperChange.sh`
 const SUPPORTED_IMAGE_FORMAT: Record<string, boolean> = {
     png: true,
@@ -30,7 +31,8 @@ function hide() {
 interface Wallpaper {
     name: string;
     path: string;
-    file: Gio.File;
+    cachePath: string;
+    file?: Gio.File;
 }
 
 function WallpaperButton({ wallpaper }: { wallpaper: Wallpaper }) {
@@ -56,26 +58,44 @@ function WallpaperButton({ wallpaper }: { wallpaper: Wallpaper }) {
     </button>
 }
 
-export default function WallpaperPicker() {
+async function wallpapersSetup(wallpaperDir: GLib.Dir): Promise<Wallpaper[]> {
     const wallpapers: Wallpaper[] = []
-    const wallpaperDir = GLib.Dir.open(WALLPAPER_PATH, 0)
     for (let file = wallpaperDir.read_name(); file != null; file = wallpaperDir.read_name()) {
         const fileNameToken = file.split(".")
         const extension = fileNameToken[fileNameToken.length - 1]
 
         console.log("TEST | file: ", file)
         if (SUPPORTED_IMAGE_FORMAT[extension] == undefined) continue
-        const path = `${WALLPAPER_PATH}/${file}`
+
         const wallpaper: Wallpaper = {
             name: fileNameToken[0],
-            path: path,
-            file: Gio.file_new_for_path(path)
+            path: `${WALLPAPER_PATH}/${file}`,
+            cachePath: `${CACHE_PATH}/${file}`,
         }
         wallpapers.push(wallpaper)
     }
 
+    try {
+        exec(`mkdir ${CACHE_PATH}`)
+    } catch (e) { }
+    await Promise.all(wallpapers.map((wallpaper) => execAsync(`magick ${wallpaper.path} -resize 20% ${wallpaper.cachePath}`)))
+    for (let wallpaper of wallpapers)
+        wallpaper.file = Gio.file_new_for_path(wallpaper.cachePath)
+
+    return wallpapers
+}
+
+
+export default function WallpaperPicker() {
+    const wallpaperDir = GLib.Dir.open(WALLPAPER_PATH, 0)
+    const wallpapers = Variable<Wallpaper[]>([]);
+    wallpapersSetup(wallpaperDir).then(newWallpapers => wallpapers.set(newWallpapers))
+
     const text = Variable("")
-    let filteredWallpapers = text(text => wallpapers.filter((wp) => fuzzySearch(text, wp.name) || text.length == 0))
+    let filteredWallpapers = Variable.derive(
+        [text, wallpapers],
+        (text: string, wallpapers: Wallpaper[]) => wallpapers.filter((wp) => fuzzySearch(text, wp.name) || text.length == 0)
+    )
     let entry: Gtk.Entry;
 
     function setupEntry(widget: Gtk.Entry) {
@@ -128,7 +148,7 @@ export default function WallpaperPicker() {
                         horizontal
                         width={1600} height={800}
                         hspacing={5} vspacing={5}
-                        datas={filteredWallpapers} buildFunction={(wallpaper) => <WallpaperButton wallpaper={wallpaper} />}
+                        datas={filteredWallpapers()} buildFunction={(wallpaper) => <WallpaperButton wallpaper={wallpaper} />}
                     />
                 </box>
                 <box vexpand />
