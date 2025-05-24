@@ -22,13 +22,14 @@ export default function ScrollList<T>({
     return <ScrolledWindow hscrollbarPolicy={horizontal ? Gtk.PolicyType.ALWAYS : Gtk.PolicyType.NEVER}
         vscrollbarPolicy={horizontal ? Gtk.PolicyType.NEVER : Gtk.PolicyType.ALWAYS}
         heightRequest={height} widthRequest={width}>
-        <box spacing={vspacing} vertical={!horizontal} homogeneous
-        >
+        <box spacing={vspacing} vertical homogeneous={horizontal}>
             {datas.as((datas) => {
                 const ret: Gtk.Widget[] = []
-                for (let i = 0; i < datas.length / crossAxisLength + 1; i++) {
+                const htotal = !horizontal ? datas.length / crossAxisLength + 1 : crossAxisLength;
+                const vtotal = horizontal ? datas.length / crossAxisLength + 1 : crossAxisLength;
+                for (let i = 0; i < htotal; i++) {
                     const row: Gtk.Widget[] = [];
-                    for (let j = 0; j < crossAxisLength; j++) {
+                    for (let j = 0; j < vtotal; j++) {
                         const data = datas.at(i * crossAxisLength + j)
                         if (data)
                             row.push(buildFunction(data))
@@ -36,7 +37,7 @@ export default function ScrollList<T>({
                             row.push(<box cssClasses={["empty"]} />)
                     }
                     ret.push(
-                        <box spacing={hspacing} vertical={horizontal} homogeneous>
+                        <box spacing={hspacing} homogeneous={!horizontal}>
                             {row}
                         </box >
                     )

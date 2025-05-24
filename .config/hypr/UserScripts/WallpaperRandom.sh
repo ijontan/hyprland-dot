@@ -11,7 +11,7 @@ RANDOMPICS=${PICS[ $RANDOM % ${#PICS[@]} ]}
 
 rm -rf ~/.cache/swww/*
 swww query || hyprctl dispatch exec swww-daemon -q
-sleep 0.1
+sleep 1
 swww img -t none ~/Pictures/black_wallpaper.png && ${USERSCRIPTSDIR}/WallpaperChange.sh ${RANDOMPICS}
 
 

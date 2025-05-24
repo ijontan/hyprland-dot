@@ -1,6 +1,10 @@
 export function fuzzySearch(needle: string, haystack: string) {
+    needle = needle.toLowerCase();
+    haystack = haystack.toLowerCase();
+
     const hlen = haystack.length;
     const nlen = needle.length;
+
     if (nlen > hlen) {
         return false;
     }

@@ -1,0 +1,99 @@
+@use "../wallust/colors-ags.scss" as consts;
+@use "../utils/utils.scss" as *;
+
+window#quickEdit {
+    all: unset;
+    background-color: gtkalpha(consts.$background, .5);
+
+
+    box.quickEdit {
+        border-radius: 11px;
+        padding: 2rem;
+        color: consts.$foreground;
+
+        entry {
+            margin: 0rem 3.5rem 3.5rem 3.5rem;
+            padding: 1rem 2rem 1rem 2rem;
+            font-size: 1.5rem;
+            border-radius: 1rem;
+            background-color: gtkalpha(consts.$foreground, 0);
+            outline: none;
+            transition: background-color 250ms;
+
+            selection {
+                background-color: gtkalpha(consts.$foreground, 0.2);
+            }
+
+            placeholder {
+                transition: letter-spacing 250ms;
+            }
+
+            &.focus:hover {
+                background-color: gtkalpha(consts.$foreground, .15);
+                outline: none;
+            }
+
+            &.focus {
+                background-color: gtkalpha(consts.$foreground, .1);
+                outline: none;
+
+                placeholder {
+                    letter-spacing: 0.3rem;
+                }
+            }
+        }
+
+        button {
+            background-color: gtkalpha(consts.$foreground, 0);
+            padding: 1rem;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            border-radius: 1rem;
+
+            &:focus:hover {
+                background-color: gtkalpha(consts.$foreground, .15);
+            }
+
+            &:hover {
+                background-color: gtkalpha(consts.$foreground, .15);
+            }
+
+            &:focus {
+                background-color: gtkalpha(consts.$foreground, .1);
+                outline: none;
+            }
+
+            label.name {
+                font-size: 1.3em;
+                transition: letter-spacing 400ms;
+            }
+
+            &:focus label.name {
+                letter-spacing: 0.3rem;
+            }
+
+            &:hover label.name {
+                letter-spacing: 0.3rem;
+            }
+
+
+            label.description {
+                color: gtkalpha(consts.$foreground, .8);
+            }
+        }
+
+        box.not-found {
+            padding: 1rem;
+
+            image {
+                font-size: 6em;
+                color: gtkalpha(consts.$foreground, .7);
+            }
+
+            label {
+                color: gtkalpha(consts.$foreground, .9);
+                font-size: 1.2em;
+            }
+        }
+    }
+}

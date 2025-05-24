@@ -3,6 +3,7 @@ import { App } from "astal/gtk4"
 import Applauncher from "./widget/AppLauncher"
 import WallpaperPicker from "./widget/WallpaperPicker"
 import { exec, readFile } from "astal"
+import QuickEdit from "./widget/QuickEdit"
 
 exec("sass ./style.scss /tmp/style.css")
 
@@ -19,6 +20,7 @@ App.start({
     main() {
         Applauncher()
         WallpaperPicker()
+        QuickEdit()
     },
     requestHandler(request: string, res: (respond: any) => void) {
         if (request == "reload") {
