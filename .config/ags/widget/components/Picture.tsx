@@ -1,5 +1,5 @@
 import GObject from "gi://GObject"
-import { Gtk, astalify, type ConstructProps } from "astal/gtk4"
+import { Gtk, astalify, type ConstructProps } from "gi://astal"
 
 export type PictureProps = ConstructProps<Gtk.Picture, Gtk.Picture.ConstructorProps>
 export const Picture = astalify<Gtk.Picture, Gtk.Picture.ConstructorProps>(Gtk.Picture, {

@@ -1,6 +1,5 @@
 import Apps from "gi://AstalApps"
-import { App, Astal, Gdk, Gtk } from "astal/gtk4"
-import { GLib, Variable } from "astal"
+import { App, Astal, Gdk, Gtk, GLib, Variable } from "gi://astal"
 import ScrollList from "./components/Paginate"
 
 // config

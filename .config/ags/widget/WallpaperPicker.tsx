@@ -1,5 +1,4 @@
-import { Binding, exec, execAsync, Gio, GLib, Variable } from "astal";
-import { App, Astal, Gdk, Gtk } from "astal/gtk4";
+import { App, Astal, Gdk, Gtk, Binding, exec, execAsync, Gio, GLib, Variable } from "gi://astal";
 import ScrollList from "./components/Paginate";
 import { fuzzySearch } from "../utils/fuzzySearch";
 import { Picture } from "./components/Picture";
@@ -94,10 +93,12 @@ export default function WallpaperPicker() {
     const text = Variable("")
     let filteredWallpapers = Variable.derive(
         [text, wallpapers],
-        (text: string, wallpapers: Wallpaper[]) => wallpapers.filter((wp) => fuzzySearch(text, wp.name) || text.length == 0)
+        (text: string, wallpapers: Wallpaper[]) => text.length == 0 ? wallpapers : wallpapers.filter((wp) => fuzzySearch(text, wp.name))
     )
     let entry: Gtk.Entry;
-
+    // filteredWallpapers.subscribe((value: any) => {
+    //     console.log(value)
+    // })
     function setupEntry(widget: Gtk.Entry) {
         entry = widget;
     }

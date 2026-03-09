@@ -1,0 +1,539 @@
+# Rime user dictionary
+#@/db_name	luna_pinyin
+#@/db_type	userdb
+#@/rime_version	1.12.0
+#@/tick	1531
+#@/user_id	d379290b-ffe7-4db1-8ec0-ecbfd66e25eb
+a 	啊	c=3 d=1.69003 t=1531
+ai 	愛	c=6 d=4.41547 t=1531
+ai ren 	愛人	c=0 d=0.0831104 t=1531
+ai ren mo ren 	愛人默認	c=2 d=1.67473 t=1531
+an 	按	c=1 d=0.907201 t=1531
+an qing li 	按情理	c=2 d=1.76391 t=1531
+ba 	把	c=2 d=1.42672 t=1531
+ban 	半	c=1 d=0.733447 t=1531
+ban 	版	c=1 d=0.927743 t=1531
+ban 	班	c=1 d=0.771052 t=1531
+bang 	幫	c=1 d=0.995012 t=1531
+bang ni 	幫你	c=1 d=0.786628 t=1531
+bang zhu 	幫助	c=6 d=3.27928 t=1531
+bao 	寶	c=3 d=2.49711 t=1531
+bao e 	報惡	c=1 d=0.923116 t=1531
+bao gui 	寶貴	c=7 d=6.30816 t=1531
+bao hu 	保護	c=1 d=0.865022 t=1531
+bao jian 	寶劍	c=1 d=0.909373 t=1531
+bao kuo 	包括	c=1 d=0.826959 t=1531
+bei 	被	c=3 d=2.06758 t=1531
+bei hai 	被害	c=1 d=0.640824 t=1531
+ben pao 	奔跑	c=1 d=1 t=1531
+bi 	比	c=1 d=0.606531 t=1531
+bi ci 	彼此	c=4 d=2.9983 t=1531
+bi ci xiang ai 	彼此相愛	c=1 d=0.839457 t=1531
+bi de 	彼得	c=2 d=1.18141 t=1531
+bi jiao 	比較	c=2 d=1.54705 t=1531
+bian 	變	c=1 d=0.687289 t=1531
+bian lian 	變臉	c=1 d=1 t=1531
+bu 	不	c=2 d=1.01323 t=1531
+bu guo 	不過	c=1 d=0.970446 t=1531
+bu hao 	不好	c=1 d=0.852144 t=1531
+bu hao yi si 	不好意思	c=2 d=1.82149 t=1531
+bu hui 	不會	c=1 d=0.860708 t=1531
+bu kao 	不靠	c=1 d=0.831104 t=1531
+bu sui bian 	不隨便	c=1 d=0.985112 t=1531
+bu wen ding 	不穩定	c=1 d=0.818731 t=1531
+bu xin 	不信	c=3 d=1.53884 t=1531
+bu xu yao 	不需要	c=2 d=1.26267 t=1531
+bu yao 	不要	c=4 d=2.23504 t=1531
+bu yao jin 	不要緊	c=1 d=0.97531 t=1531
+bu zhi dao 	不知道	c=1 d=0.802519 t=1531
+can jia 	參加	c=2 d=1.44782 t=1531
+cha jing 	查經	c=3 d=2.11931 t=1531
+cha ju 	差距	c=1 d=0.891366 t=1531
+chang 	唱	c=2 d=1.83244 t=1531
+chang qi 	長期	c=1 d=0.852144 t=1531
+cheng shou 	承受	c=3 d=2.32904 t=1531
+cheng wei 	成爲	c=3 d=1.4583 t=1531
+cheng yuan 	成員	c=1 d=0.715338 t=1531
+chi 	遲	c=1 d=0.869358 t=1531
+chi shou 	持守	c=1 d=0.97531 t=1531
+chu 	出	c=7 d=3.81127 t=1531
+chu 	處	c=1 d=0.860708 t=1531
+chu yu 	處於	c=1 d=0.860708 t=1531
+chuan 	傳	c=1 d=0.778801 t=1531
+chuang shi 	創世	c=1 d=0.980199 t=1531
+chuang shi ji 	創世紀	c=1 d=0.99005 t=1531
+da 	打	c=3 d=2.76142 t=1531
+da an 	答案	c=3 d=1.49492 t=1531
+da da 	大大	c=3 d=2.48096 t=1531
+da jia 	大家	c=1 d=0.960789 t=1531
+dai 	代	c=1 d=0.67032 t=1531
+dai biao 	代表	c=1 d=0.831104 t=1531
+dai ling 	帶領	c=1 d=0.873716 t=1531
+dang shi 	當時	c=2 d=1.56295 t=1531
+dao 	到	c=1 d=0.496585 t=1531
+dao lu 	道路	c=1 d=0.99005 t=1531
+de 	地	c=3 d=1.77342 t=1531
+de 	的	c=116 d=24.5745 t=1531
+de dao 	得到	c=2 d=1.04194 t=1531
+deng 	等	c=1 d=0.625002 t=1531
+deng deng 	等等	c=1 d=0.99005 t=1531
+deng deng deng deng 	等等等等	c=0 d=0.0995012 t=1531
+di 	地	c=2 d=1.87255 t=1531
+di 	第	c=1 d=0.995012 t=1531
+di wei 	地位	c=2 d=1.77894 t=1531
+di xiong 	弟兄	c=1 d=0.927743 t=1531
+dian 	點	c=3 d=1.54064 t=1531
+dong xi 	東西	c=1 d=0.909373 t=1531
+dou 	都	c=2 d=1.58616 t=1531
+dou shi 	都是	c=1 d=0.499074 t=1531
+du 	讀	c=2 d=1.43975 t=1531
+duan lian 	鍛鍊	c=1 d=0.798516 t=1531
+dui 	對	c=5 d=2.56614 t=1531
+dui dai 	對待	c=4 d=2.74148 t=1531
+dui yu 	對於	c=2 d=1.55585 t=1531
+dun pai 	盾牌	c=1 d=0.895834 t=1531
+duo luo 	墮落	c=1 d=0.985112 t=1531
+e 	惡	c=1 d=0.918512 t=1531
+e e 	哦哦	c=0 d=0.0985112 t=1531
+e e e 	鵝鵝鵝	c=0 d=0.395037 t=1531
+e e e e e e e e e e e e e e 	鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝哦哦	c=1 d=0.99005 t=1531
+e e e e e e e e e e e e e e e e e e 	鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝鵝	c=1 d=0.995012 t=1531
+e ren 	惡人	c=2 d=1.95101 t=1531
+en 	恩	c=4 d=3.27154 t=1531
+en dian 	恩典	c=8 d=5.49302 t=1531
+en en en en 	嗯嗯嗯嗯	c=0 d=0.0980199 t=1531
+er 	兒	c=2 d=1.19128 t=1531
+er zi 	兒子	c=2 d=1.84153 t=1531
+fan er 	反而	c=1 d=0.621885 t=1531
+fei chang 	非常	c=2 d=1.50447 t=1531
+feng sheng 	豐盛	c=2 d=1.66637 t=1531
+fu 	服	c=4 d=1.67142 t=1531
+fu cong 	服從	c=1 d=0.737123 t=1531
+fu qi 	福氣	c=2 d=0.904837 t=1531
+fu shi 	服侍	c=1 d=0.839457 t=1531
+fu yin 	福音	c=3 d=1.81051 t=1531
+gai 	改	c=1 d=0.891366 t=1531
+gai 	該	c=3 d=1.79244 t=1531
+gai bian 	改變	c=1 d=0.603506 t=1531
+gan hua 	感化	c=1 d=0.759572 t=1531
+gan xie 	感謝	c=5 d=4.65283 t=1531
+gang hao 	剛好	c=1 d=0.965605 t=1531
+gao su 	告訴	c=2 d=1.84209 t=1531
+ge 	個	c=3 d=2.07997 t=1531
+ge chang 	歌唱	c=1 d=1 t=1531
+gei 	給	c=1 d=0.484325 t=1531
+gen 	跟	c=1 d=0.99005 t=1531
+gen ju 	根據	c=4 d=2.51561 t=1531
+gen sui 	跟隨	c=1 d=0.522046 t=1531
+geng 	更	c=3 d=2.3653 t=1531
+geng jia 	更加	c=2 d=1.33853 t=1531
+gong ke 	功課	c=1 d=0.99005 t=1531
+gong tong 	共同	c=2 d=1.01301 t=1531
+gong yi 	公義	c=1 d=0.856415 t=1531
+gu jiu 	古舊	c=2 d=1.94099 t=1531
+guan cha 	觀察	c=1 d=0.822835 t=1531
+guan xi 	關係	c=2 d=1.43765 t=1531
+gui 	歸	c=1 d=1 t=1531
+gui 	貴	c=2 d=1.58673 t=1531
+gui yu 	歸於	c=1 d=0.99005 t=1531
+ha ha ha ha 	哈哈哈哈	c=1 d=0.562705 t=1531
+hai 	還	c=1 d=0.891366 t=1531
+hai pa 	害怕	c=2 d=1.74518 t=1531
+hai you 	還有	c=1 d=0.878095 t=1531
+hao 	好	c=4 d=1.82338 t=1531
+hao de 	好的	c=1 d=0.763379 t=1531
+he 	和	c=10 d=4.06804 t=1531
+he deng 	何等	c=7 d=5.50608 t=1531
+he neng 	何能	c=1 d=0.960789 t=1531
+hen 	很	c=2 d=1.2915 t=1531
+hen 	恨	c=2 d=1.37501 t=1531
+hen duo 	很多	c=1 d=0.718924 t=1531
+hen jiu 	很久	c=1 d=0.839457 t=1531
+hen nan 	很難	c=1 d=0.771052 t=1531
+hou wei 	後衛	c=1 d=0.985112 t=1531
+hu 	呼	c=1 d=0.985112 t=1531
+hua 	話	c=3 d=1.87798 t=1531
+hua yu 	話語	c=1 d=0.600496 t=1531
+hui 	回	c=1 d=0.802519 t=1531
+hui 	會	c=6 d=2.35294 t=1531
+hui bang 	毀謗	c=1 d=0.57695 t=1531
+hui da 	回答	c=1 d=0.522046 t=1531
+hun yin 	婚姻	c=5 d=2.57097 t=1531
+huo 	或	c=5 d=2.79143 t=1531
+huo 	活	c=6 d=3.79225 t=1531
+huo chu 	活出	c=3 d=2.42997 t=1531
+ji 	記	c=1 d=0.818731 t=1531
+ji du 	基督	c=6 d=3.24208 t=1531
+ji du tu 	基督徒	c=12 d=5.82825 t=1531
+ji ge 	幾個	c=1 d=0.97531 t=1531
+ji rou 	肌肉	c=1 d=0.810584 t=1531
+jia 	家	c=3 d=1.7215 t=1531
+jia 	架	c=2 d=1.89942 t=1531
+jia ting 	家庭	c=1 d=0.873716 t=1531
+jian dan 	簡單	c=1 d=0.814647 t=1531
+jiang 	將	c=1 d=0.878095 t=1531
+jiang li 	獎勵	c=1 d=0.694197 t=1531
+jiao 	交	c=1 d=0.66365 t=1531
+jiao 	叫	c=3 d=1.73718 t=1531
+jiao liu 	交流	c=1 d=0.941765 t=1531
+jiao ni 	教你	c=1 d=0.774916 t=1531
+jiao zhang 	交賬	c=1 d=1 t=1531
+jie 	節	c=7 d=5.30738 t=1531
+jie jue 	解決	c=4 d=3.12789 t=1531
+jie lun 	結論	c=1 d=0.559898 t=1531
+jie mei 	姐妹	c=2 d=1.17318 t=1531
+jie shi 	解釋	c=2 d=1.5615 t=1531
+jie shou 	接受	c=4 d=2.90385 t=1531
+jin qing 	盡情	c=1 d=0.99005 t=1531
+jing 	經	c=3 d=1.93489 t=1531
+jing bai 	敬拜	c=1 d=0.965605 t=1531
+jing li 	經歷	c=1 d=0.839457 t=1531
+jing wen 	經文	c=1 d=0.794534 t=1531
+jiu 	就	c=2 d=1.72358 t=1531
+jiu en 	救恩	c=1 d=0.932394 t=1531
+jiu neng 	就能	c=1 d=0.895834 t=1531
+jiu shi 	就是	c=2 d=1.4996 t=1531
+jiu shu 	救贖	c=3 d=2.29596 t=1531
+jiu zhu 	救主	c=4 d=3.51088 t=1531
+ju jue 	拒絕	c=1 d=0.941765 t=1531
+ju pa 	懼怕	c=1 d=0.618783 t=1531
+jue de 	覺得	c=3 d=2.02634 t=1531
+jun wang 	君王	c=1 d=0.687289 t=1531
+jun zhuang 	軍裝	c=1 d=0.831104 t=1531
+kan 	看	c=4 d=3.5274 t=1531
+kan dai 	看待	c=1 d=0.980199 t=1531
+kan fa 	看法	c=2 d=1.56495 t=1531
+kao 	靠	c=5 d=3.89152 t=1531
+ke 	可	c=0 d=0.0995012 t=1531
+ke neng 	可能	c=3 d=2.17172 t=1531
+ke shi 	可是	c=2 d=1.72767 t=1531
+ke yi 	可以	c=9 d=4.44763 t=1531
+ke zan xu 	可讚許	c=1 d=1 t=1531
+ku 	庫	c=1 d=1 t=1531
+ku nan 	苦難	c=3 d=2.50886 t=1531
+la 	拉	c=2 d=1.17942 t=1531
+lai 	來	c=4 d=2.65959 t=1531
+lai bu ji 	來不及	c=1 d=0.479505 t=1531
+le 	了	c=11 d=4.97178 t=1531
+li 	裏	c=1 d=0.970446 t=1531
+li jie 	理解	c=3 d=2.68086 t=1531
+li ke 	立刻	c=1 d=0.509156 t=1531
+li xiang 	理想	c=3 d=1.73371 t=1531
+lia 	倆	c=1 d=1 t=1531
+lian 	鍊	c=1 d=1 t=1531
+liao jie 	了解	c=2 d=1.66894 t=1531
+lie ren 	獵人	c=1 d=1 t=1531
+ling 	另	c=1 d=0.729789 t=1531
+ling 	靈	c=1 d=1 t=1531
+luo ma 	羅馬	c=1 d=0.970446 t=1531
+ma 	嗎	c=8 d=4.32719 t=1531
+ma tai fu yin 	馬太福音	c=1 d=0.937067 t=1531
+mang 	忙	c=1 d=0.99005 t=1531
+mei 	沒	c=1 d=0.514274 t=1531
+mei 	美	c=2 d=1.43397 t=1531
+mei li 	美麗	c=1 d=0.771052 t=1531
+mei yi tian 	每一天	c=1 d=0.904837 t=1531
+mei you 	沒有	c=4 d=2.81378 t=1531
+men 	們	c=15 d=8.06188 t=1531
+men tu 	門徒	c=1 d=0.873716 t=1531
+min 	民	c=2 d=1.83795 t=1531
+ming 	命	c=2 d=1.61127 t=1531
+ming bai 	明白	c=1 d=0.763379 t=1531
+ming ling 	命令	c=6 d=3.12924 t=1531
+mo ren 	默認	c=0 d=0.0831104 t=1531
+nan 	難	c=2 d=1.11991 t=1531
+nan dao 	難道	c=1 d=0.99005 t=1531
+ne 	呢	c=3 d=2.25232 t=1531
+neng 	能	c=8 d=4.56924 t=1531
+neng gou 	能夠	c=1 d=0.818731 t=1531
+neng li 	能力	c=1 d=0.937067 t=1531
+ni 	你	c=25 d=13.0559 t=1531
+ni 	禰	c=1 d=0.985112 t=1531
+ni de 	你的	c=1 d=0.985112 t=1531
+ni dui yu 	你對於	c=1 d=0.941765 t=1531
+ni hai pa 	你害怕	c=1 d=0.99005 t=1531
+ni shi 	你是	c=2 d=1.86144 t=1531
+ni you 	你有	c=1 d=0.798516 t=1531
+nian 	年	c=1 d=0.852144 t=1531
+nv er 	女兒	c=1 d=0.937067 t=1531
+nv sheng 	女生	c=2 d=1.50915 t=1531
+nv xing 	女性	c=2 d=1.78674 t=1531
+pei xun 	培訓	c=1 d=0.67368 t=1531
+pin xing 	品行	c=6 d=4.32906 t=1531
+ping 	平	c=1 d=0.923116 t=1531
+ping deng 	平等	c=1 d=0.980199 t=1531
+ping ju 	憑據	c=1 d=0.67368 t=1531
+po sui 	破碎	c=1 d=0.722527 t=1531
+pu ren 	僕人	c=2 d=0.869633 t=1531
+qi 	起	c=2 d=1.5283 t=1531
+qi fu 	欺負	c=1 d=0.951229 t=1531
+qi shi lu 	啓示錄	c=3 d=2.38038 t=1531
+qi ya 	欺壓	c=3 d=1.97854 t=1531
+qi zi 	妻子	c=19 d=8.00111 t=1531
+qian bei 	謙卑	c=2 d=1.95581 t=1531
+qiang 	強	c=1 d=0.740818 t=1531
+qin yan 	親眼	c=1 d=1 t=1531
+qing 	晴	c=1 d=0.995012 t=1531
+qing 	請	c=1 d=0.995012 t=1531
+qing li 	情理	c=2 d=1.49725 t=1531
+qing xu 	情緒	c=2 d=1.56233 t=1531
+qu 	去	c=2 d=1.41389 t=1531
+quan 	全	c=2 d=1.68754 t=1531
+que 	卻	c=3 d=2.4286 t=1531
+que 	缺	c=1 d=0.941765 t=1531
+qun 	羣	c=1 d=0.941765 t=1531
+ran 	然	c=1 d=0.509156 t=1531
+ren 	人	c=12 d=5.13171 t=1531
+ri 	日	c=1 d=0.951229 t=1531
+rong yao 	榮耀	c=1 d=0.985112 t=1531
+ru ci 	如此	c=1 d=0.995012 t=1531
+ru guo 	如果	c=7 d=4.05774 t=1531
+ru he 	如何	c=13 d=5.08233 t=1531
+ru ma 	辱罵	c=1 d=0.718924 t=1531
+ruan ruo 	軟弱	c=4 d=1.84055 t=1531
+rui 	銳	c=2 d=1.96536 t=1531
+ruo 	弱	c=1 d=0.814647 t=1531
+sa 	撒	c=3 d=1.64355 t=1531
+sa mu er 	撒母耳	c=1 d=0.814647 t=1531
+shang 	上	c=11 d=6.74153 t=1531
+shang di 	上帝	c=7 d=4.19705 t=1531
+she 	舍	c=1 d=0.960789 t=1531
+she li 	設立	c=1 d=0.882497 t=1531
+she me 	什麼	c=25 d=9.28216 t=1531
+shen 	神	c=17 d=8.28154 t=1531
+shen chu 	深觸	c=2 d=1.95084 t=1531
+shen de 	神的	c=2 d=1.43797 t=1531
+shen ti 	身體	c=3 d=2.32964 t=1531
+shen zhi 	甚至	c=1 d=0.535261 t=1531
+sheng 	生	c=2 d=1.81897 t=1531
+sheng huo 	生活	c=2 d=1.57427 t=1531
+sheng jing 	聖經	c=5 d=3.07446 t=1531
+sheng ling 	聖靈	c=2 d=1.72316 t=1531
+sheng ming 	生命	c=4 d=2.3812 t=1531
+sheng sheng shi shi 	生生世世	c=0 d=0.0995012 t=1531
+sheng zhi 	聖旨	c=1 d=0.532592 t=1531
+shi 	使	c=3 d=2.18771 t=1531
+shi 	十	c=3 d=2.70067 t=1531
+shi 	士	c=1 d=0.831104 t=1531
+shi 	屎	c=1 d=0.99005 t=1531
+shi 	師	c=1 d=0.83527 t=1531
+shi 	是	c=24 d=8.25822 t=1531
+shi 	時	c=2 d=1.21373 t=1531
+shi bu shi 	是不是	c=1 d=0.955997 t=1531
+shi chang 	時常	c=1 d=0.88692 t=1531
+shi dai 	時代	c=1 d=0.843665 t=1531
+shi guo 	試過	c=1 d=0.802519 t=1531
+shi he 	適合	c=1 d=0.71177 t=1531
+shi jie 	世界	c=6 d=3.95994 t=1531
+shi ni 	是你	c=5 d=4.49206 t=1531
+shi pian 	詩篇	c=1 d=0.913931 t=1531
+shi shang 	世上	c=1 d=0.71177 t=1531
+shi shen me 	是什麼	c=1 d=0.65377 t=1531
+shi xing 	實行	c=1 d=0.878095 t=1531
+shi zi jia 	十字架	c=2 d=0.99507 t=1531
+shou 	手	c=2 d=1.51155 t=1531
+shou 	首	c=1 d=0.496585 t=1531
+shou zhong 	受衆	c=1 d=0.729789 t=1531
+shou zhong 	手中	c=1 d=0.677057 t=1531
+shu 	書	c=5 d=3.88525 t=1531
+shu 	述	c=1 d=0.923116 t=1531
+shu ling 	屬靈	c=2 d=1.46617 t=1531
+shuai tui 	衰退	c=1 d=0.865022 t=1531
+shui 	誰	c=8 d=6.23297 t=1531
+shui shou 	水手	c=1 d=1 t=1531
+shun 	順	c=3 d=1.26624 t=1531
+shun fu 	順服	c=18 d=8.39407 t=1531
+shuo 	說	c=4 d=2.80889 t=1531
+si xiang 	思想	c=1 d=0.826959 t=1531
+sui bian 	隨便	c=0 d=0.0980199 t=1531
+suo 	所	c=1 d=0.582748 t=1531
+suo yi 	所以	c=1 d=0.771052 t=1531
+suo you 	所有	c=3 d=2.35233 t=1531
+suo zuo 	所做	c=1 d=0.790571 t=1531
+ta 	他	c=1 d=0.882497 t=1531
+ta men 	他們	c=5 d=3.73618 t=1531
+tai 	太	c=1 d=0.985112 t=1531
+tang 	堂	c=1 d=0.763379 t=1531
+te zhi 	特質	c=2 d=1.58414 t=1531
+ti 	題	c=2 d=1.30986 t=1531
+ti dao 	提到	c=1 d=0.529935 t=1531
+ti liang 	體諒	c=2 d=1.13243 t=1531
+ti tie 	體貼	c=2 d=1.68325 t=1531
+ti xu 	體恤	c=1 d=0.818731 t=1531
+tian 	天	c=6 d=3.9021 t=1531
+tian fu 	天父	c=1 d=0.882497 t=1531
+tian shang 	天上	c=1 d=0.955997 t=1531
+ting 	聽	c=2 d=1.5599 t=1531
+tong xiao 	通宵	c=1 d=0.980199 t=1531
+tong xin 	同心	c=2 d=1.43034 t=1531
+tou 	頭	c=3 d=2.01278 t=1531
+tou kui 	頭盔	c=1 d=0.946485 t=1531
+wa wa 	瓦瓦	c=1 d=1.0797 t=1531
+wai biao 	外表	c=2 d=1.41511 t=1531
+wan 	萬	c=1 d=0.856415 t=1531
+wang dao 	王道	c=1 d=0.759572 t=1531
+wang wang wang wang wang 	汪汪汪汪汪	c=0 d=0.197521 t=1531
+wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wen wen dang dang deng deng deng deng di wei wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wang wa wa sheng sheng shi shi sheng sheng shi shi da an e e e 	汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪穩穩當當等等等等地位汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪汪瓦瓦生生世世生生世世答案鵝鵝鵝	c=1 d=1 t=1531
+wang wang wang wang wang wo en en en en en en en en en en en en e e e wo en en en en e e e 	汪汪汪汪汪我嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯嗯鵝鵝鵝我嗯嗯嗯嗯鵝鵝鵝	c=1 d=0.985112 t=1531
+wei 	爲	c=7 d=3.95346 t=1531
+wei da 	偉大	c=1 d=0.932394 t=1531
+wei de 	爲的	c=1 d=0.763379 t=1531
+wei lai 	未來	c=1 d=0.873716 t=1531
+wei shen me 	爲什麼	c=7 d=4.13398 t=1531
+wei you 	唯有	c=1 d=0.900325 t=1531
+wen 	問	c=3 d=2.53512 t=1531
+wen 	文	c=1 d=0.683861 t=1531
+wen ti 	問題	c=2 d=1.60357 t=1531
+wen wen dang dang 	穩穩當當	c=0 d=0.0995012 t=1531
+wo 	我	c=24 d=9.79919 t=1531
+wo de 	我的	c=1 d=0.99005 t=1531
+wo men 	我們	c=28 d=11.3557 t=1531
+wo yao 	我要	c=3 d=2.28742 t=1531
+wu 	無	c=2 d=1.54058 t=1531
+wu lun 	無論	c=1 d=0.865022 t=1531
+wu pin 	物品	c=1 d=0.810584 t=1531
+xi yue 	喜悅	c=1 d=0.843665 t=1531
+xia 	下	c=2 d=1.16973 t=1531
+xia lai 	下來	c=1 d=0.99005 t=1531
+xia mian 	下面	c=1 d=0.524663 t=1531
+xian dai 	現代	c=2 d=1.76003 t=1531
+xian zai 	現在	c=3 d=2.76181 t=1531
+xiang 	像	c=2 d=1.46379 t=1531
+xiang 	向	c=1 d=0.99005 t=1531
+xiang si 	相似	c=1 d=0.852144 t=1531
+xiang yao 	想要	c=1 d=0.900325 t=1531
+xiao 	笑	c=1 d=1 t=1531
+xiao mie 	消滅	c=2 d=1.52748 t=1531
+xiao xin 	小心	c=1 d=0.970446 t=1531
+xie 	寫	c=2 d=1.02964 t=1531
+xie 	鞋	c=1 d=0.882497 t=1531
+xin 	信	c=2 d=1.89382 t=1531
+xin 	心	c=5 d=3.01721 t=1531
+xin 	新	c=1 d=0.66365 t=1531
+xin kao 	信靠	c=6 d=5.70666 t=1531
+xin ku 	辛苦	c=1 d=0.637628 t=1531
+xin shi 	信實	c=2 d=1.90331 t=1531
+xin tu 	信徒	c=2 d=1.54653 t=1531
+xin xin 	信心	c=1 d=0.88692 t=1531
+xing 	行	c=2 d=1.20775 t=1531
+xing qi 	星期	c=1 d=0.980199 t=1531
+xing rong 	形容	c=3 d=2.20193 t=1531
+xing shan 	行善	c=2 d=1.29825 t=1531
+xing wei 	行爲	c=1 d=0.588605 t=1531
+xing xia 	行俠	c=1 d=0.891366 t=1531
+xing xia zhang yi 	行俠仗義	c=1 d=0.895834 t=1531
+xiong di 	兄弟	c=2 d=1.4139 t=1531
+xu duo 	許多	c=1 d=0.909373 t=1531
+xu yao 	需要	c=3 d=2.13085 t=1531
+xuan ze 	選擇	c=3 d=1.71887 t=1531
+xue 	血	c=1 d=0.97531 t=1531
+xue dao 	學到	c=1 d=0.680451 t=1531
+ya bo la han 	亞伯拉罕	c=2 d=1.82321 t=1531
+yan 	眼	c=1 d=0.965605 t=1531
+yang shi 	樣式	c=1 d=0.985112 t=1531
+yao 	要	c=23 d=8.22501 t=1531
+yao dai 	腰帶	c=1 d=0.852144 t=1531
+yao you 	要有	c=1 d=0.970446 t=1531
+ye 	也	c=3 d=2.02386 t=1531
+ye su 	耶穌	c=13 d=8.25996 t=1531
+yi 	一	c=7 d=4.32902 t=1531
+yi 	以	c=2 d=1.87156 t=1531
+yi ba zhang 	一巴掌	c=1 d=0.970446 t=1531
+yi fu suo 	以弗所	c=1 d=0.99005 t=1531
+yi ge 	一個	c=1 d=0.860708 t=1531
+yi ke 	一顆	c=3 d=2.91202 t=1531
+yi qi 	一起	c=3 d=2.02757 t=1531
+yi qian 	以前	c=2 d=1.56259 t=1531
+yi sai ya 	以賽亞	c=4 d=3.04341 t=1531
+yi se lie 	以色列	c=5 d=3.23618 t=1531
+yi sheng 	一生	c=1 d=0.995012 t=1531
+yi si 	意思	c=3 d=1.64111 t=1531
+yi sui 	易碎	c=1 d=0.806541 t=1531
+yi wei 	意味	c=1 d=0.99005 t=1531
+yi yang 	一樣	c=2 d=1.49302 t=1531
+yi yang ma 	一樣嗎	c=1 d=0.597501 t=1531
+yi yi 	意義	c=3 d=2.30266 t=1531
+yin 	因	c=5 d=3.99399 t=1531
+yin 	音	c=2 d=1.72717 t=1531
+yin wei 	因爲	c=10 d=6.47537 t=1531
+yin yong 	引用	c=1 d=0.909373 t=1531
+ying 	應	c=2 d=1.53999 t=1531
+ying gai 	應該	c=7 d=3.96957 t=1531
+ying he 	迎合	c=1 d=0.726149 t=1531
+ying wen 	英文	c=1 d=1 t=1531
+yong 	用	c=1 d=0.778801 t=1531
+yong dai 	擁戴	c=1 d=1 t=1531
+you 	又	c=2 d=1.84736 t=1531
+you 	友	c=1 d=0.965605 t=1531
+you 	有	c=27 d=8.827 t=1531
+you de 	有的	c=1 d=0.955997 t=1531
+you fu 	有福	c=1 d=0.970446 t=1531
+you lian 	右臉	c=1 d=1 t=1531
+you ren 	有人	c=1 d=0.955997 t=1531
+you shen me 	有什麼	c=1 d=0.752014 t=1531
+yu 	與	c=16 d=9.7885 t=1531
+yu ku nan 	與苦難	c=1 d=0.818731 t=1531
+yuan 	員	c=1 d=1 t=1531
+yuan 	願	c=3 d=2.6341 t=1531
+yuan liang 	原諒	c=2 d=1.55372 t=1531
+yuan wen 	原文	c=2 d=1.50433 t=1531
+yuan ze 	原則	c=1 d=0.895834 t=1531
+yun 	雲	c=1 d=0.980199 t=1531
+zai 	再	c=1 d=0.904837 t=1531
+zai 	在	c=22 d=8.05629 t=1531
+zai ni 	在你	c=1 d=0.985112 t=1531
+zai yi 	在意	c=2 d=1.68696 t=1531
+zai zhe li 	在這裏	c=1 d=0.904837 t=1531
+zan mei 	讚美	c=1 d=0.965605 t=1531
+zan xu 	讚許	c=0 d=0.0995012 t=1531
+zao 	造	c=1 d=0.913931 t=1531
+zen neng 	怎能	c=2 d=1.97516 t=1531
+zen yang 	怎樣	c=5 d=1.96238 t=1531
+zhan luan 	戰亂	c=1 d=0.865022 t=1531
+zhan zheng 	戰爭	c=13 d=9.42476 t=1531
+zhang 	章	c=3 d=1.89871 t=1531
+zhang fu 	丈夫	c=17 d=6.58899 t=1531
+zhang lao 	長老	c=1 d=0.932394 t=1531
+zhao 	招	c=1 d=0.748264 t=1531
+zhe 	着	c=4 d=3.80297 t=1531
+zhe 	這	c=7 d=4.0928 t=1531
+zhe duan 	這段	c=1 d=0.790571 t=1531
+zhe ge 	這個	c=3 d=2.19992 t=1531
+zhe me 	這麼	c=2 d=1.36526 t=1531
+zhe xie 	這些	c=2 d=1.42185 t=1531
+zhen 	真	c=1 d=0.612626 t=1531
+zhen li 	真理	c=1 d=0.843665 t=1531
+zhen shi 	真實	c=2 d=1.60459 t=1531
+zhen zheng 	真正	c=2 d=1.56862 t=1531
+zheng jiu 	拯救	c=1 d=0.882497 t=1531
+zhi 	之	c=3 d=2.71798 t=1531
+zhi 	只	c=2 d=1.96062 t=1531
+zhi dao 	直到	c=1 d=0.980199 t=1531
+zhi dao 	知道	c=2 d=1.96079 t=1531
+zhi de 	值得	c=1 d=0.946485 t=1531
+zhi jian 	之間	c=1 d=0.683861 t=1531
+zhi jie 	直接	c=1 d=0.481909 t=1531
+zhi shi 	指示	c=1 d=0.748264 t=1531
+zhi shi 	知識	c=1 d=0.839457 t=1531
+zhi you 	只有	c=3 d=2.84089 t=1531
+zhong 	中	c=7 d=3.42146 t=1531
+zhong 	重	c=3 d=2.75556 t=1531
+zhong nan qing nv 	重男輕女	c=1 d=1 t=1531
+zhong shi 	忠實	c=1 d=0.690734 t=1531
+zhong xin 	中心	c=1 d=0.822835 t=1531
+zhu 	主	c=7 d=5.15933 t=1531
+zhu fu 	祝福	c=4 d=1.99316 t=1531
+zhu ren 	主人	c=2 d=0.880025 t=1531
+zi 	字	c=2 d=1.19998 t=1531
+zi ji 	自己	c=4 d=1.75892 t=1531
+zi liao 	資料	c=2 d=1.29792 t=1531
+zi min 	子民	c=4 d=2.89152 t=1531
+zi you 	自由	c=1 d=0.965605 t=1531
+zu yuan 	組員	c=2 d=1.47715 t=1531
+zu zhang 	組長	c=2 d=1.44125 t=1531
+zui 	最	c=1 d=0.97531 t=1531
+zun zhong 	尊重	c=2 d=1.70017 t=1531
+zuo 	作	c=2 d=1.64575 t=1531
+zuo 	做	c=11 d=4.27662 t=1531
+zuo le 	做了	c=1 d=0.782705 t=1531
+zuo wei 	作爲	c=6 d=3.31574 t=1531

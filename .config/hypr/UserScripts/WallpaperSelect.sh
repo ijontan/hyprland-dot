@@ -16,10 +16,6 @@ POS="$(bc -l <<< "scale=4 ; ${RANDOM}/32767"),$(bc -l <<< "scale=4 ; ${RANDOM}/3
 ANGLE="$(bc -l <<< "scale=3 ; ${RANDOM}/32767*360")"
 SWWW_PARAMS="--transition-bezier $BEZIER --transition-fps $FPS --transition-type $TYPE --transition-pos $POS --transition-angle $ANGLE --transition-duration $DURATION --transition-wave 50,10"
 
-# Check if swaybg is running
-if pidof swaybg > /dev/null; then
-  pkill swaybg
-fi
 
 # Retrieve image files
 PICS=($(ls "${wallDIR}" | grep -E ".jpg$|.jpeg$|.png$|.gif$"))

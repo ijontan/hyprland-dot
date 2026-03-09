@@ -1,7 +1,8 @@
-import { App } from "astal/gtk4"
+import app from "ags/gtk4/app"
 import Applauncher from "./widget/AppLauncher"
 import WallpaperPicker from "./widget/WallpaperPicker"
-import { exec, readFile } from "astal"
+import { exec } from "ags/process"
+import { readFile } from "ags/file"
 import QuickEdit from "./widget/QuickEdit"
 
 exec("sass ./style.scss /tmp/style.css")
@@ -13,7 +14,7 @@ async function updateCSS() {
     console.log("CLI | css reloaded")
 }
 
-App.start({
+app.start({
     css: "/tmp/style.css",
     main() {
         Applauncher()

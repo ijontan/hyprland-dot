@@ -1,4 +1,4 @@
-import { App, Astal } from "astal/gtk4"
+import { App, Astal } from "ags/gtk4"
 
 const NAME = "alarm"
 export default function Alarm() {

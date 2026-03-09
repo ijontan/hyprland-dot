@@ -1,5 +1,5 @@
-import { Binding } from "astal"
-import { Gtk } from "astal/gtk4"
+import { Binding } from "ags"
+import { Gtk } from "ags/gtk4"
 import { ScrolledWindow } from "./ScrolledWindow"
 
 interface ScrollistProps<T> {
@@ -25,12 +25,15 @@ export default function ScrollList<T>({
         <box spacing={vspacing} vertical homogeneous={horizontal}>
             {datas.as((datas) => {
                 const ret: Gtk.Widget[] = []
-                const htotal = !horizontal ? datas.length / crossAxisLength + 1 : crossAxisLength;
-                const vtotal = horizontal ? datas.length / crossAxisLength + 1 : crossAxisLength;
+                const htotal = !horizontal ? datas.length / crossAxisLength + datas.length % crossAxisLength : crossAxisLength;
+                const vtotal = horizontal ? datas.length / crossAxisLength + datas.length % crossAxisLength : crossAxisLength;
+
+        console.log(datas)
                 for (let i = 0; i < htotal; i++) {
                     const row: Gtk.Widget[] = [];
                     for (let j = 0; j < vtotal; j++) {
-                        const data = datas.at(i * crossAxisLength + j)
+                        const idx = !horizontal ? i * crossAxisLength + j: j * crossAxisLength + i
+                        const data = datas.at(idx)
                         if (data)
                             row.push(buildFunction(data))
                         else

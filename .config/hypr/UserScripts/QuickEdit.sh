@@ -5,6 +5,7 @@ configs="$HOME/.config/hypr/configs"
 UserConfigs="$HOME/.config/hypr/UserConfigs"
 
 declare -A menu_options=(
+    ["QuickShell"]="$HOME/.config/quickshell/"
     ["Hyprland"]="$HOME/.config/hypr"
     ["Wlogout"]="$HOME/.config/wlogout/"
     ["Eww"]="$HOME/.config/eww"

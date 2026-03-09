@@ -1,5 +1,6 @@
 import { execAsync, GLib, Variable } from "astal"
-import { App, Astal, Gdk, Gtk } from "astal/gtk4"
+import {  Astal, Gdk, Gtk } from "astal/gtk4"
+import app from "ags/gtk4/app"
 import { fuzzySearch } from "../utils/fuzzySearch"
 import ScrollList from "./components/Paginate"
 
